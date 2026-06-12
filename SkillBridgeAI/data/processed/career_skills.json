@@ -2,6 +2,7 @@
     {
         "career": ".net Developer",
         "skills": [
+            "c#",
             "css",
             "java",
             "sql"
@@ -9,15 +10,21 @@
     },
     {
         "career": "Account Executive",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Account Manager",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Account Officer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Account Payable",
@@ -44,6 +51,7 @@
     {
         "career": "Accounting",
         "skills": [
+            "teamwork",
             "word"
         ]
     },
@@ -96,6 +104,7 @@
     {
         "career": "Admin Accounting",
         "skills": [
+            "communication",
             "excel"
         ]
     },
@@ -111,12 +120,14 @@
         "career": "Admin Marketing",
         "skills": [
             "excel",
+            "negotiation",
             "word"
         ]
     },
     {
         "career": "Admin Marketplace",
         "skills": [
+            "communication",
             "excel",
             "word"
         ]
@@ -140,6 +151,7 @@
     {
         "career": "Admin Project",
         "skills": [
+            "communication",
             "excel",
             "word"
         ]
@@ -147,13 +159,16 @@
     {
         "career": "Admin Purchasing",
         "skills": [
+            "communication",
             "excel",
+            "negotiation",
             "word"
         ]
     },
     {
         "career": "Admin Sales",
         "skills": [
+            "communication",
             "excel"
         ]
     },
@@ -166,6 +181,7 @@
     {
         "career": "Administrasi",
         "skills": [
+            "communication",
             "excel",
             "powerpoint"
         ]
@@ -178,7 +194,9 @@
     },
     {
         "career": "Administrator",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Agent Sales Officer (aso Development Program)",
@@ -187,12 +205,16 @@
     {
         "career": "Android Developer",
         "skills": [
-            "java"
+            "collaboration",
+            "java",
+            "teamwork"
         ]
     },
     {
         "career": "Apoteker",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Apoteker Penanggung Jawab",
@@ -201,6 +223,7 @@
     {
         "career": "Architect",
         "skills": [
+            "communication",
             "photoshop"
         ]
     },
@@ -216,7 +239,10 @@
     },
     {
         "career": "Area Sales Supervisor",
-        "skills": []
+        "skills": [
+            "problem solving",
+            "teamwork"
+        ]
     },
     {
         "career": "Arsitek",
@@ -226,11 +252,16 @@
     },
     {
         "career": "Art Director",
-        "skills": []
+        "skills": [
+            "communication",
+            "leadership"
+        ]
     },
     {
         "career": "Asisten Apoteker",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Assistant Director Of Sales",
@@ -250,7 +281,10 @@
     },
     {
         "career": "Assistant Sales Manager",
-        "skills": []
+        "skills": [
+            "analytical skills",
+            "communication"
+        ]
     },
     {
         "career": "Assistant Spa Manager",
@@ -258,7 +292,9 @@
     },
     {
         "career": "Associate Product Manager",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Attendant-food & Beverage",
@@ -269,6 +305,7 @@
         "skills": [
             "docker",
             "express",
+            "graphql",
             "java",
             "sql",
             "typescript"
@@ -280,7 +317,9 @@
     },
     {
         "career": "Barista",
-        "skills": []
+        "skills": [
+            "teamwork"
+        ]
     },
     {
         "career": "Bartender",
@@ -296,15 +335,22 @@
     },
     {
         "career": "Brand Executive",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Brand Manager",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Business Analyst",
-        "skills": []
+        "skills": [
+            "communication",
+            "problem solving"
+        ]
     },
     {
         "career": "Business Analytics",
@@ -312,7 +358,10 @@
     },
     {
         "career": "Business Development",
-        "skills": []
+        "skills": [
+            "communication",
+            "teamwork"
+        ]
     },
     {
         "career": "Business Development Associate",
@@ -328,11 +377,16 @@
     },
     {
         "career": "Business Development Manager",
-        "skills": []
+        "skills": [
+            "collaboration",
+            "teamwork"
+        ]
     },
     {
         "career": "Business Development Officer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Business Development Specialist",
@@ -348,7 +402,9 @@
     },
     {
         "career": "Call Center",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Captain Resto",
@@ -357,20 +413,27 @@
     {
         "career": "Cashier",
         "skills": [
+            "communication",
             "excel"
         ]
     },
     {
         "career": "Chef",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Chef De Cuisine",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Chef De Partie",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Chef De Partie - Pastry",
@@ -425,12 +488,14 @@
     {
         "career": "Content Creator",
         "skills": [
+            "communication",
             "photoshop"
         ]
     },
     {
         "career": "Content Writer",
         "skills": [
+            "communication",
             "seo"
         ]
     },
@@ -440,11 +505,15 @@
     },
     {
         "career": "Cook",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Cook Helper",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Cook Ii",
@@ -453,6 +522,7 @@
     {
         "career": "Copywriter",
         "skills": [
+            "communication",
             "seo"
         ]
     },
@@ -463,6 +533,7 @@
     {
         "career": "Creative Designer",
         "skills": [
+            "communication",
             "illustrator",
             "photoshop"
         ]
@@ -481,30 +552,42 @@
     },
     {
         "career": "Customer Relation Officer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Customer Service",
         "skills": [
+            "communication",
             "photoshop"
         ]
     },
     {
         "career": "Customer Service Officer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Customer Service Representative",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Customer Service Staff",
-        "skills": []
+        "skills": [
+            "communication",
+            "problem solving"
+        ]
     },
     {
         "career": "Customer Support",
         "skills": [
-            "linux"
+            "communication",
+            "linux",
+            "teamwork"
         ]
     },
     {
@@ -523,7 +606,9 @@
     {
         "career": "Data Scientist",
         "skills": [
-            "machine learning"
+            "leadership",
+            "machine learning",
+            "statistics"
         ]
     },
     {
@@ -537,6 +622,7 @@
     {
         "career": "Database Engineer",
         "skills": [
+            "firebase",
             "mongodb",
             "mysql",
             "sql"
@@ -548,7 +634,9 @@
     },
     {
         "career": "Demi Chef De Partie",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Dental Consultant",
@@ -565,12 +653,14 @@
     {
         "career": "Desain Grafis",
         "skills": [
+            "communication",
             "photoshop"
         ]
     },
     {
         "career": "Design Grafis",
         "skills": [
+            "communication",
             "illustrator",
             "photoshop"
         ]
@@ -578,6 +668,7 @@
     {
         "career": "Design Graphic",
         "skills": [
+            "communication",
             "illustrator",
             "photoshop"
         ]
@@ -585,6 +676,7 @@
     {
         "career": "Designer",
         "skills": [
+            "communication",
             "illustrator",
             "photoshop"
         ]
@@ -596,9 +688,11 @@
     {
         "career": "Developer",
         "skills": [
+            "c#",
             "css",
             "html",
-            "sql"
+            "sql",
+            "teamwork"
         ]
     },
     {
@@ -617,6 +711,7 @@
     {
         "career": "Digital Marketing Executive",
         "skills": [
+            "analytical skills",
             "sem",
             "seo"
         ]
@@ -631,6 +726,7 @@
     {
         "career": "Digital Marketing Officer",
         "skills": [
+            "communication",
             "google ads",
             "photoshop",
             "sem",
@@ -640,6 +736,8 @@
     {
         "career": "Digital Marketing Specialist",
         "skills": [
+            "analytical skills",
+            "communication",
             "css",
             "html",
             "sem",
@@ -668,7 +766,9 @@
     },
     {
         "career": "Dokter",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Dokter Hewan",
@@ -692,7 +792,9 @@
     },
     {
         "career": "Drafter Interior",
-        "skills": []
+        "skills": [
+            "teamwork"
+        ]
     },
     {
         "career": "Driver",
@@ -704,7 +806,9 @@
     },
     {
         "career": "Duty Manager",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "E-commerce Manager",
@@ -728,7 +832,9 @@
     },
     {
         "career": "Engineering Supervisor",
-        "skills": []
+        "skills": [
+            "problem solving"
+        ]
     },
     {
         "career": "Engineering Technician",
@@ -754,15 +860,22 @@
     },
     {
         "career": "Executive Chef",
-        "skills": []
+        "skills": [
+            "collaboration"
+        ]
     },
     {
         "career": "Executive Housekeeper",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Executive Secretary",
-        "skills": []
+        "skills": [
+            "collaboration",
+            "communication"
+        ]
     },
     {
         "career": "Executive Sous Chef",
@@ -774,11 +887,16 @@
     },
     {
         "career": "Field Collection",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Field Sales",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Finance",
@@ -831,17 +949,23 @@
     },
     {
         "career": "Finance Manager",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Finance Officer",
         "skills": [
+            "analytical skills",
+            "communication",
             "express"
         ]
     },
     {
         "career": "Finance Staff",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Finance Supervisor",
@@ -849,7 +973,9 @@
     },
     {
         "career": "Financial Controller",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Fisioterapis",
@@ -863,11 +989,18 @@
     },
     {
         "career": "Food & Beverage Manager",
-        "skills": []
+        "skills": [
+            "communication",
+            "leadership",
+            "negotiation"
+        ]
     },
     {
         "career": "Food & Beverage Supervisor",
-        "skills": []
+        "skills": [
+            "leadership",
+            "problem solving"
+        ]
     },
     {
         "career": "Front Desk Agent",
@@ -878,11 +1011,15 @@
     },
     {
         "career": "Front Office",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Front Office Manager",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Front Office Supervisor",
@@ -901,6 +1038,7 @@
     {
         "career": "Fullstack Developer",
         "skills": [
+            "communication",
             "java",
             "javascript",
             "php"
@@ -908,11 +1046,17 @@
     },
     {
         "career": "Funding Officer",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "General Affair",
-        "skills": []
+        "skills": [
+            "communication",
+            "leadership"
+        ]
     },
     {
         "career": "General Affair Staff",
@@ -924,21 +1068,28 @@
     },
     {
         "career": "General Manager",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Golang Developer",
-        "skills": []
+        "skills": [
+            "golang",
+            "teamwork"
+        ]
     },
     {
         "career": "Graphic Design",
         "skills": [
+            "communication",
             "photoshop"
         ]
     },
     {
         "career": "Graphic Designer",
         "skills": [
+            "communication",
             "photoshop"
         ]
     },
@@ -955,7 +1106,9 @@
     },
     {
         "career": "Guest Relation Officer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Guest Service Agent",
@@ -979,7 +1132,9 @@
     },
     {
         "career": "Guru Bahasa Indonesia",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Guru Matematika",
@@ -987,15 +1142,22 @@
     },
     {
         "career": "Head Chef",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Head Of Marketing",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Head Of Sales",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Host",
@@ -1027,11 +1189,15 @@
     },
     {
         "career": "Hr Business Partner",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Hr Generalist",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Hr Manager",
@@ -1043,11 +1209,15 @@
     },
     {
         "career": "Hr Supervisor",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Hrd",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Hrd Manager",
@@ -1071,19 +1241,26 @@
     },
     {
         "career": "Hrga Staff",
-        "skills": []
+        "skills": [
+            "teamwork"
+        ]
     },
     {
         "career": "Hse Officer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Human Resources Manager",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Interior Designer",
         "skills": [
+            "communication",
             "photoshop"
         ]
     },
@@ -1099,15 +1276,20 @@
     },
     {
         "career": "Internal Auditor",
-        "skills": []
+        "skills": [
+            "analytical skills"
+        ]
     },
     {
         "career": "It Business Analyst",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "It Developer",
         "skills": [
+            "communication",
             "css",
             "html",
             "javascript",
@@ -1125,6 +1307,7 @@
     {
         "career": "It Programmer",
         "skills": [
+            "c#",
             "codeigniter",
             "css",
             "html",
@@ -1133,6 +1316,7 @@
             "laravel",
             "node.js",
             "php",
+            "problem solving",
             "react"
         ]
     },
@@ -1146,7 +1330,9 @@
     },
     {
         "career": "It Staff",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "It Supervisor",
@@ -1158,13 +1344,15 @@
     {
         "career": "It Support",
         "skills": [
-            "linux"
+            "linux",
+            "problem solving"
         ]
     },
     {
         "career": "Java Developer",
         "skills": [
             "java",
+            "kotlin",
             "mongodb"
         ]
     },
@@ -1203,7 +1391,9 @@
     },
     {
         "career": "Kepala Gudang",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Kepala Instalasi Farmasi",
@@ -1211,7 +1401,9 @@
     },
     {
         "career": "Kepala Produksi",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Kepala Unit Rekam Medis",
@@ -1227,7 +1419,9 @@
     },
     {
         "career": "Kitchen Crew",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Kitchen Staff",
@@ -1235,15 +1429,23 @@
     },
     {
         "career": "Kol Specialist",
-        "skills": []
+        "skills": [
+            "collaboration",
+            "communication",
+            "teamwork"
+        ]
     },
     {
         "career": "Kurir",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Laundry Attendant",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Leader Outlet",
@@ -1255,23 +1457,34 @@
     },
     {
         "career": "Legal Intern",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Legal Manager",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Legal Officer",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Legal Staff",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Legal Supervisor",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Loss Prevention Officer",
@@ -1283,7 +1496,10 @@
     },
     {
         "career": "Maintenance Manager",
-        "skills": []
+        "skills": [
+            "communication",
+            "leadership"
+        ]
     },
     {
         "career": "Maintenance Supervisor",
@@ -1291,11 +1507,17 @@
     },
     {
         "career": "Management Trainee",
-        "skills": []
+        "skills": [
+            "communication",
+            "problem solving"
+        ]
     },
     {
         "career": "Manager Marketing",
-        "skills": []
+        "skills": [
+            "communication",
+            "leadership"
+        ]
     },
     {
         "career": "Manager On Duty",
@@ -1308,48 +1530,68 @@
     {
         "career": "Mandarin Translator",
         "skills": [
+            "communication",
             "excel",
             "word"
         ]
     },
     {
         "career": "Marketing",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Marketing Associate",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Marketing Communication",
         "skills": [
+            "communication",
             "data analysis"
         ]
     },
     {
         "career": "Marketing Communication Manager",
-        "skills": []
+        "skills": [
+            "collaboration",
+            "communication",
+            "teamwork"
+        ]
     },
     {
         "career": "Marketing Communications Manager",
         "skills": [
+            "analytical skills",
+            "communication",
+            "leadership",
             "sem",
             "seo"
         ]
     },
     {
         "career": "Marketing Executive",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Marketing Manager",
         "skills": [
+            "communication",
             "word"
         ]
     },
     {
         "career": "Marketing Officer",
-        "skills": []
+        "skills": [
+            "analytical skills",
+            "communication"
+        ]
     },
     {
         "career": "Marketing Property",
@@ -1357,19 +1599,30 @@
     },
     {
         "career": "Marketing Specialist",
-        "skills": []
+        "skills": [
+            "communication",
+            "leadership"
+        ]
     },
     {
         "career": "Marketing Staff",
-        "skills": []
+        "skills": [
+            "communication",
+            "leadership"
+        ]
     },
     {
         "career": "Marketing Supervisor",
-        "skills": []
+        "skills": [
+            "statistics",
+            "teamwork"
+        ]
     },
     {
         "career": "Marketing Support",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Mathematics Teacher",
@@ -1393,7 +1646,10 @@
     },
     {
         "career": "Merchandiser",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Merchant Acquisition",
@@ -1408,6 +1664,7 @@
         "skills": [
             "java",
             "javascript",
+            "kotlin",
             "mysql",
             "react"
         ]
@@ -1415,20 +1672,27 @@
     {
         "career": "Mobile Developer",
         "skills": [
-            "java"
+            "java",
+            "swift"
         ]
     },
     {
         "career": "Motion Graphic Designer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Motor Bike Mechanic",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Motor Mechanic",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Motorcycle Mechanic",
@@ -1436,7 +1700,10 @@
     },
     {
         "career": "Network Engineer",
-        "skills": []
+        "skills": [
+            "communication",
+            "problem solving"
+        ]
     },
     {
         "career": "Odoo Developer",
@@ -1450,7 +1717,9 @@
     },
     {
         "career": "Operational Manager",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Operator Produksi",
@@ -1462,11 +1731,15 @@
     },
     {
         "career": "Pastry Chef",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Penjaga Stand",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Penjahit",
@@ -1478,7 +1751,9 @@
     },
     {
         "career": "Perawat Gigi",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Perawat Kamar Bedah",
@@ -1507,6 +1782,7 @@
             "html",
             "java",
             "javascript",
+            "kotlin",
             "laravel",
             "mysql",
             "php",
@@ -1515,7 +1791,9 @@
     },
     {
         "career": "Plant Manager",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Pos Assurance Consultant (pac)",
@@ -1524,6 +1802,7 @@
     {
         "career": "Ppic",
         "skills": [
+            "analytical skills",
             "excel",
             "powerpoint",
             "word"
@@ -1531,7 +1810,9 @@
     },
     {
         "career": "Ppic Staff",
-        "skills": []
+        "skills": [
+            "analytical skills"
+        ]
     },
     {
         "career": "Pramuniaga",
@@ -1551,18 +1832,25 @@
     },
     {
         "career": "Procurement Specialist",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Procurement Staff",
         "skills": [
+            "communication",
             "excel",
+            "negotiation",
             "word"
         ]
     },
     {
         "career": "Procurement Supervisor",
-        "skills": []
+        "skills": [
+            "negotiation",
+            "problem solving"
+        ]
     },
     {
         "career": "Product Designer",
@@ -1571,7 +1859,8 @@
     {
         "career": "Product Manager",
         "skills": [
-            "data analysis"
+            "data analysis",
+            "leadership"
         ]
     },
     {
@@ -1590,16 +1879,21 @@
         "career": "Production Manager",
         "skills": [
             "excel",
+            "leadership",
+            "teamwork",
             "word"
         ]
     },
     {
         "career": "Production Supervisor",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Programmer",
         "skills": [
+            "bootstrap",
             "codeigniter",
             "java",
             "javascript",
@@ -1612,11 +1906,15 @@
     },
     {
         "career": "Project Coordinator",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Project Engineer",
-        "skills": []
+        "skills": [
+            "analytical skills"
+        ]
     },
     {
         "career": "Project Manager",
@@ -1633,34 +1931,50 @@
     {
         "career": "Public Relation",
         "skills": [
-            "google ads"
+            "communication",
+            "google ads",
+            "teamwork"
         ]
     },
     {
         "career": "Purchasing",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Purchasing Manager",
-        "skills": []
+        "skills": [
+            "analytical skills",
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Purchasing Officer",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Purchasing Staff",
         "skills": [
-            "excel"
+            "excel",
+            "negotiation"
         ]
     },
     {
         "career": "Purchasing Supervisor",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Qa Engineer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Quality Assurance",
@@ -1672,7 +1986,9 @@
     },
     {
         "career": "Quality Control Staff",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Quantity Surveyor",
@@ -1687,7 +2003,9 @@
     },
     {
         "career": "Receptionist",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Recruiter",
@@ -1699,7 +2017,9 @@
     },
     {
         "career": "Recruitment Specialist",
-        "skills": []
+        "skills": [
+            "teamwork"
+        ]
     },
     {
         "career": "Recruitment Staff",
@@ -1707,11 +2027,17 @@
     },
     {
         "career": "Regional Sales Manager",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Relationship Manager",
-        "skills": []
+        "skills": [
+            "communication",
+            "leadership",
+            "negotiation"
+        ]
     },
     {
         "career": "Relationship Officer",
@@ -1744,13 +2070,16 @@
     {
         "career": "Sales & Marketing",
         "skills": [
+            "communication",
             "excel",
             "word"
         ]
     },
     {
         "career": "Sales & Marketing Manager",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Sales & Service Officer",
@@ -1760,6 +2089,7 @@
         "career": "Sales / Marketing",
         "skills": [
             "excel",
+            "teamwork",
             "word"
         ]
     },
@@ -1772,7 +2102,9 @@
     },
     {
         "career": "Sales Area",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Sales Associate",
@@ -1784,7 +2116,10 @@
     },
     {
         "career": "Sales Consultant",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Sales Coordinator",
@@ -1792,7 +2127,9 @@
     },
     {
         "career": "Sales Counter",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Sales Development Representative",
@@ -1800,7 +2137,10 @@
     },
     {
         "career": "Sales Engineer",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Sales Engineering",
@@ -1808,16 +2148,23 @@
     },
     {
         "career": "Sales Executive",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Sales Force",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Sales Manager",
         "skills": [
-            "excel"
+            "communication",
+            "excel",
+            "negotiation",
+            "problem solving"
         ]
     },
     {
@@ -1826,11 +2173,15 @@
     },
     {
         "career": "Sales Marketing",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Sales Marketing Executive",
-        "skills": []
+        "skills": [
+            "analytical skills"
+        ]
     },
     {
         "career": "Sales Motoris",
@@ -1839,7 +2190,10 @@
     {
         "career": "Sales Officer",
         "skills": [
-            "excel"
+            "communication",
+            "excel",
+            "negotiation",
+            "teamwork"
         ]
     },
     {
@@ -1860,11 +2214,15 @@
     },
     {
         "career": "Sales Project",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Sales Promotion",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Sales Property",
@@ -1880,11 +2238,16 @@
     },
     {
         "career": "Sales Staff",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Sales Supervisor",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Sales Support",
@@ -1896,16 +2259,23 @@
     {
         "career": "Salesman",
         "skills": [
-            "excel"
+            "communication",
+            "excel",
+            "negotiation",
+            "teamwork"
         ]
     },
     {
         "career": "Scrum Master",
-        "skills": []
+        "skills": [
+            "collaboration"
+        ]
     },
     {
         "career": "Secretary",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Security",
@@ -1913,11 +2283,14 @@
     },
     {
         "career": "Security Engineer",
-        "skills": []
+        "skills": [
+            "problem solving"
+        ]
     },
     {
         "career": "Sekretaris",
         "skills": [
+            "communication",
             "excel",
             "word"
         ]
@@ -1930,11 +2303,16 @@
     },
     {
         "career": "Senior Accounting",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Senior Programmer",
         "skills": [
+            "analytical skills",
+            "c#",
+            "golang",
             "php",
             "python",
             "rest api"
@@ -1942,24 +2320,31 @@
     },
     {
         "career": "Senior Sales Manager",
-        "skills": []
+        "skills": [
+            "negotiation"
+        ]
     },
     {
         "career": "Senior Software Engineer",
         "skills": [
+            "communication",
+            "leadership",
             "node.js"
         ]
     },
     {
         "career": "Seo Specialist",
         "skills": [
+            "communication",
             "sem",
             "seo"
         ]
     },
     {
         "career": "Server",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Site Engineer",
@@ -1980,12 +2365,15 @@
     {
         "career": "Social Media Officer",
         "skills": [
+            "communication",
             "photoshop"
         ]
     },
     {
         "career": "Social Media Specialist",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Software Developer",
@@ -2014,11 +2402,16 @@
     },
     {
         "career": "Solution Architect",
-        "skills": []
+        "skills": [
+            "collaboration",
+            "leadership"
+        ]
     },
     {
         "career": "Sous Chef",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Spa Therapist",
@@ -2028,7 +2421,10 @@
     },
     {
         "career": "Spg/spb",
-        "skills": []
+        "skills": [
+            "communication",
+            "teamwork"
+        ]
     },
     {
         "career": "Staff Accounting",
@@ -2044,6 +2440,7 @@
     {
         "career": "Staff Administrasi",
         "skills": [
+            "communication",
             "excel",
             "word"
         ]
@@ -2051,6 +2448,7 @@
     {
         "career": "Staff Export Import",
         "skills": [
+            "communication",
             "excel",
             "word"
         ]
@@ -2058,6 +2456,7 @@
     {
         "career": "Staff Finance",
         "skills": [
+            "communication",
             "excel",
             "word"
         ]
@@ -2065,6 +2464,7 @@
     {
         "career": "Staff Gudang",
         "skills": [
+            "communication",
             "excel",
             "powerpoint",
             "word"
@@ -2073,7 +2473,9 @@
     {
         "career": "Staff Hrd",
         "skills": [
+            "communication",
             "excel",
+            "leadership",
             "word"
         ]
     },
@@ -2082,6 +2484,7 @@
         "skills": [
             "javascript",
             "laravel",
+            "leadership",
             "mysql",
             "php",
             "sql"
@@ -2094,6 +2497,7 @@
     {
         "career": "Staff Marketing",
         "skills": [
+            "communication",
             "excel",
             "illustrator",
             "photoshop",
@@ -2102,7 +2506,9 @@
     },
     {
         "career": "Staff Outlet",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Staff Pajak",
@@ -2113,7 +2519,9 @@
     {
         "career": "Staff Purchasing",
         "skills": [
+            "communication",
             "excel",
+            "negotiation",
             "word"
         ]
     },
@@ -2123,19 +2531,28 @@
     },
     {
         "career": "Store Manager",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Supervisor",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Supervisor Accounting",
-        "skills": []
+        "skills": [
+            "problem solving"
+        ]
     },
     {
         "career": "Supervisor Marketing",
-        "skills": []
+        "skills": [
+            "communication",
+            "negotiation"
+        ]
     },
     {
         "career": "Supervisor Outlet",
@@ -2144,7 +2561,9 @@
     {
         "career": "Supervisor Produksi",
         "skills": [
-            "java"
+            "communication",
+            "java",
+            "leadership"
         ]
     },
     {
@@ -2157,7 +2576,10 @@
     },
     {
         "career": "Supply Chain Manager",
-        "skills": []
+        "skills": [
+            "leadership",
+            "negotiation"
+        ]
     },
     {
         "career": "Surveyor",
@@ -2172,7 +2594,9 @@
     },
     {
         "career": "System Analyst",
-        "skills": []
+        "skills": [
+            "analytical skills"
+        ]
     },
     {
         "career": "System Engineer",
@@ -2220,7 +2644,10 @@
     },
     {
         "career": "Technical Consultant",
-        "skills": []
+        "skills": [
+            "collaboration",
+            "teamwork"
+        ]
     },
     {
         "career": "Technical Lead",
@@ -2235,15 +2662,21 @@
     },
     {
         "career": "Technical Support",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Technical Writer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Technician",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Teknisi",
@@ -2267,7 +2700,9 @@
     },
     {
         "career": "Tenaga Pendidik (guru)",
-        "skills": []
+        "skills": [
+            "analytical skills"
+        ]
     },
     {
         "career": "Therapist",
@@ -2275,18 +2710,23 @@
     },
     {
         "career": "Training Manager",
-        "skills": []
+        "skills": [
+            "analytical skills"
+        ]
     },
     {
         "career": "Translator Mandarin",
         "skills": [
+            "communication",
             "data analysis",
             "express"
         ]
     },
     {
         "career": "UI/UX Designer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Universal Banker",
@@ -2304,6 +2744,7 @@
         "career": "Ux Writer",
         "skills": [
             "express",
+            "leadership",
             "seo"
         ]
     },
@@ -2313,7 +2754,9 @@
     },
     {
         "career": "Videographer",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Waiter",
@@ -2331,11 +2774,15 @@
     },
     {
         "career": "Warehouse Manager",
-        "skills": []
+        "skills": [
+            "leadership"
+        ]
     },
     {
         "career": "Warehouse Staff",
-        "skills": []
+        "skills": [
+            "communication"
+        ]
     },
     {
         "career": "Warehouse Supervisor",
@@ -2344,6 +2791,7 @@
     {
         "career": "Web Designer",
         "skills": [
+            "collaboration",
             "illustrator",
             "photoshop"
         ]
@@ -2351,6 +2799,9 @@
     {
         "career": "Web Developer",
         "skills": [
+            "bootstrap",
+            "collaboration",
+            "communication",
             "css",
             "html",
             "java",
@@ -2373,12 +2824,15 @@
             "laravel",
             "mysql",
             "php",
+            "problem solving",
             "react",
             "sql"
         ]
     },
     {
         "career": "iOS Developer",
-        "skills": []
+        "skills": [
+            "swift"
+        ]
     }
 ]

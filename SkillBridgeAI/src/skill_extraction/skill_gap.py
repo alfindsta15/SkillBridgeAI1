@@ -1,5 +1,3 @@
-# src/skill_extraction/skill_gap.py
-
 import json
 from difflib import get_close_matches
 
@@ -96,7 +94,6 @@ def analyze_skill_gap(
             "suggestions": suggestions
         }
 
-    # Normalize user skills for matching
     normalized_user_skills = {
         normalize_skill_name(skill)
         for skill in user_skills
