@@ -1,0 +1,76 @@
+# ====================================
+# Python
+# ====================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# ====================================
+# Jupyter
+# ====================================
+.ipynb_checkpoints/
+
+# ====================================
+# VS Code / IDEs
+# ====================================
+.vscode/
+.idea/
+
+# ====================================
+# OS
+# ====================================
+.DS_Store
+Thumbs.db
+
+# ====================================
+# Environment Variables & Secrets
+# ====================================
+.env
+.env.local
+.env.*
+.streamlit/secrets.toml
+
+# ====================================
+# Python Build
+# ====================================
+build/
+dist/
+*.egg-info/
+
+# ====================================
+# Logs
+# ====================================
+*.log
+
+# ====================================
+# HuggingFace Cache / Large Models
+# ====================================
+.cache/
+huggingface/
+models/
+
+# ====================================
+# Embeddings & Large Binaries
+# ====================================
+*.npy
+*.pkl
+
+# ====================================
+# Data Directories (Large Raw Datasets)
+# ====================================
+# Ignore raw data inside any subfolders (e.g. SkillBridgeAI/data/raw/)
+**/data/raw/
+
+# ====================================
+# Reports & Temporary Files
+# ====================================
+reports/*.xlsx
+reports/*.pdf
+temp/
+tmp/
