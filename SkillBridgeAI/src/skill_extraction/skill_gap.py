@@ -28,6 +28,12 @@ def normalize_skill_name(skill_name: str) -> str:
         "power bi": "power bi",
         "restapi": "rest api",
         "rest api": "rest api",
+        "javascript": "javascript",
+        "java script": "javascript",
+        "js": "javascript",
+        "typescript": "typescript",
+        "type script": "typescript",
+        "ts": "typescript",
     }
     return mapping.get(s, s)
 
@@ -121,7 +127,7 @@ def analyze_skill_gap(
         / len(career_skills)
         * 100,
         2
-    ) if career_skills else 0
+    ) if career_skills else 0.0
 
     return {
         "success": True,
@@ -129,6 +135,7 @@ def analyze_skill_gap(
         "readiness_score": score,
         "matching_skills": matched,
         "missing_skills": missing,
+        "note": "Tidak ada data keahlian wajib yang terdaftar untuk karir ini di database." if not career_skills else None,
         "statistics": {
             "total_required_skills": len(career_skills),
             "matched_skills": len(matched),
