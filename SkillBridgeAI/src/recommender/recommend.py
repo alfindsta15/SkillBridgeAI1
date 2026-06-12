@@ -74,6 +74,11 @@ def recommend_career(user_skill_text: str, top_k: int = 5):
 
     hybrid_recommendations = []
 
+    SEMANTIC_WEIGHT = 0.5
+    COVERAGE_WEIGHT = 0.5
+    OVERLAP_BONUS = 15.0
+    MAX_HYBRID_SCORE = 100.0
+
     for idx, row in careers.iterrows():
         career_name = row["career"]
         semantic_score = float(similarities[idx] * 100)
@@ -89,7 +94,12 @@ def recommend_career(user_skill_text: str, top_k: int = 5):
         
         coverage_score = (match_idf_sum / total_idf_sum * 100.0) if total_idf_sum > 0 else 0.0
 
-        hybrid_score = (0.5 * semantic_score) + (0.5 * coverage_score) + (overlap_count * 3.0)
+        raw_hybrid_score = (
+            SEMANTIC_WEIGHT * semantic_score
+            + COVERAGE_WEIGHT * coverage_score
+            + overlap_count * OVERLAP_BONUS
+        )
+        hybrid_score = float(min(MAX_HYBRID_SCORE, raw_hybrid_score))
 
         display_matched = []
         for s in career_skills:
