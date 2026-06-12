@@ -10,5 +10,3 @@ Final Project Kelompok 6
 ## cd skillBridgeAi 
 ## python core_logic.py
 
-etstjhh
-

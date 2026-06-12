@@ -27,6 +27,12 @@ def main():
         )
     )
 
+    if not recommendation_result["success"] or len(recommendation_result["recommendations"]) == 0:
+        print("\n===================================")
+        print("Process Terminated: No matching careers found.")
+        print("===================================\n")
+        return
+
     top_career = recommendation_result[
         "recommendations"
     ][0]["career"]
