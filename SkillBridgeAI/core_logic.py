@@ -3,6 +3,7 @@ import json
 from src.recommender.recommend import recommend_career
 from src.skill_extraction.skill_gap import analyze_skill_gap
 from src.roadmap.generator import generate_roadmap_json
+# from src.scoring.scoring ????
 
 
 def validate_input(user_skill_text: str):
@@ -106,6 +107,11 @@ def analyze_user(
     if selected_career is None:
         selected_career = recommendations[0]["career"]
 
+    match_result = analyze_selected_job(
+        user_skill_text,
+        selected_career
+    )
+
     skill_gap_result = get_skill_gap(
         user_skill_text=user_skill_text,
         target_career=selected_career
@@ -115,6 +121,7 @@ def analyze_user(
         "success": True,
         "recommendations": recommendations,
         "selected_career": selected_career,
+        "match_analysis": match_result,
         "skill_gap": skill_gap_result
     }
 
@@ -128,3 +135,17 @@ def analyze_user(
         result["roadmap"] = roadmap_result
 
     return result
+
+
+if __name__ == "__main__":
+    result = analyze_user(
+        user_skill_text="python, sql, excel"
+    )
+
+    print(
+        json.dumps(
+            result,
+            indent=4,
+            ensure_ascii=False
+        )
+    )
