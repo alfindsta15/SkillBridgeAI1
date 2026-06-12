@@ -1,3 +1,21 @@
+import os
+import warnings
+import logging
+
+warnings.filterwarnings("ignore")
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
+os.environ["HF_HUB_DISABLE_IMPLICIT_TOKEN_WARNING"] = "1"
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+try:
+    from huggingface_hub.utils import disable_progress_bars
+    disable_progress_bars()
+except ImportError:
+    pass
+
+logging.getLogger("sentence_transformers").setLevel(logging.WARNING)
+logging.getLogger("transformers").setLevel(logging.ERROR)
+
 import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
@@ -7,9 +25,9 @@ df = pd.read_csv(
     "data/processed/career_profiles_raw.csv"
 )
 
-print("Loading model paraphrase-multilingual-MiniLM-L12-v2...")
+print("Loading model all-MiniLM-L6-v2...")
 model = SentenceTransformer(
-    "paraphrase-multilingual-MiniLM-L12-v2"
+    "all-MiniLM-L6-v2"
 )
 
 print("Generating embeddings with averaging...")
@@ -19,14 +37,12 @@ unique_embeddings = []
 for i, career in enumerate(unique_careers):
     profiles = df[df["career"] == career]["profile"].tolist()
     
-    # Generate embeddings for all profiles of this career
     emb = model.encode(
         profiles,
         show_progress_bar=False,
         convert_to_numpy=True
     )
     
-    # Calculate the average vector (mean along axis 0)
     avg_emb = np.mean(emb, axis=0)
     unique_embeddings.append(avg_emb)
     
@@ -35,13 +51,11 @@ for i, career in enumerate(unique_careers):
 
 embeddings_array = np.array(unique_embeddings)
 
-# Save embeddings
 np.save(
     "data/embeddings/career_embeddings.npy",
     embeddings_array
 )
 
-# Save unique career titles so recommendation indices match 1-to-1
 unique_careers_df = pd.DataFrame({"career": unique_careers})
 unique_careers_df.to_csv(
     "data/processed/career_profiles.csv",
