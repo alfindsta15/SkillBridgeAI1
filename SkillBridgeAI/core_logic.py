@@ -7,9 +7,15 @@ from src.skill_extraction.skill_gap import analyze_skill_gap
 from src.roadmap.generator import generate_roadmap_json
 
 try:
-    from src.scoring.scoring import calculate_match_score
+    from src.scoring.scoring import (
+        analyze_selected_job,
+        data_grouped,
+        model
+    )
 except ImportError:
-    calculate_match_score = None
+    analyze_selected_job = None
+    data_grouped = None
+    model = None
 
 
 logging.basicConfig(
@@ -56,19 +62,44 @@ def get_match_score(
     target_career: str
 ):
 
-    if calculate_match_score is None:
+    if (
+        analyze_selected_job is None
+        or data_grouped is None
+        or model is None
+    ):
 
         return {
             "success": False,
-            "message": "Modul scoring belum tersedia"
+            "message": "Modul scoring belum tersedia",
+            "job": target_career,
+            "semantic_match": None,
+            "matched_skills": [],
+            "missing_skills": []
         }
 
     try:
 
-        return calculate_match_score(
-            user_skill_text=user_skill_text,
-            target_career=target_career
+        result = analyze_selected_job(
+            user_input_text=user_skill_text,
+            selected_job_title=target_career,
+            data_df=data_grouped,
+            model_encoder=model
         )
+
+        if "error" in result:
+
+            return {
+                "success": False,
+                "message": result["error"],
+                "job": target_career,
+                "semantic_match": None,
+                "matched_skills": [],
+                "missing_skills": []
+            }
+
+        result["success"] = True
+
+        return result
 
     except Exception as e:
 
@@ -76,7 +107,11 @@ def get_match_score(
 
         return {
             "success": False,
-            "message": str(e)
+            "message": str(e),
+            "job": target_career,
+            "semantic_match": None,
+            "matched_skills": [],
+            "missing_skills": []
         }
 
 
@@ -198,16 +233,12 @@ def analyze_user(
         target_career=selected_career
     )
 
-    missing_skills = []
+    missing_skills = score_result.get(
+        "missing_skills",
+        []
+    )
 
-    if score_result.get("success"):
-
-        missing_skills = score_result.get(
-            "missing_skills",
-            []
-        )
-
-    elif skill_gap_result.get("success"):
+    if not missing_skills:
 
         missing_skills = skill_gap_result.get(
             "missing_skills",
