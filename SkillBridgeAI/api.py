@@ -1,4 +1,7 @@
+from typing import List, Optional
+
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from core_logic import (
@@ -10,13 +13,22 @@ from core_logic import (
 
 app = FastAPI(
     title="SkillBridgeAI API",
+    description="Career Recommendation, Skill Gap Analysis, Match Scoring, and Learning Roadmap",
     version="1.0.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
 class AnalyzeRequest(BaseModel):
     skills: str
-    selected_career: str | None = None
+    selected_career: Optional[str] = None
     top_k: int = 5
 
 
@@ -33,19 +45,22 @@ class SkillGapRequest(BaseModel):
 class RoadmapRequest(BaseModel):
     skills: str
     target_career: str
-    missing_skills: list
+    missing_skills: List[str]
 
 
 @app.get("/")
 def root():
     return {
-        "message": "SkillBridgeAI API Running"
+        "success": True,
+        "message": "SkillBridgeAI API Running",
+        "version": "1.0.0"
     }
 
 
 @app.get("/health")
 def health():
     return {
+        "success": True,
         "status": "healthy"
     }
 
