@@ -11,10 +11,12 @@ try:
 except ImportError:
     calculate_match_score = None
 
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s"
 )
+
 
 def validate_input(user_skill_text: str):
 
@@ -49,34 +51,6 @@ def get_recommendations(
         }
 
 
-def get_skill_gap(
-    user_skill_text: str,
-    target_career: str
-):
-
-    try:
-
-        user_skills = [
-            skill.strip()
-            for skill in user_skill_text.split(",")
-            if skill.strip()
-        ]
-
-        return analyze_skill_gap(
-            user_skills=user_skills,
-            target_career=target_career
-        )
-
-    except Exception as e:
-
-        logging.exception("Skill Gap Error")
-
-        return {
-            "success": False,
-            "message": str(e)
-        }
-
-
 def get_match_score(
     user_skill_text: str,
     target_career: str
@@ -99,6 +73,34 @@ def get_match_score(
     except Exception as e:
 
         logging.exception("Scoring Error")
+
+        return {
+            "success": False,
+            "message": str(e)
+        }
+
+
+def get_skill_gap(
+    user_skill_text: str,
+    target_career: str
+):
+
+    try:
+
+        user_skills = [
+            skill.strip()
+            for skill in user_skill_text.split(",")
+            if skill.strip()
+        ]
+
+        return analyze_skill_gap(
+            user_skills=user_skills,
+            target_career=target_career
+        )
+
+    except Exception as e:
+
+        logging.exception("Skill Gap Error")
 
         return {
             "success": False,
@@ -184,9 +186,7 @@ def analyze_user(
 
     if selected_career is None:
 
-        selected_career = recommendations[0].get(
-            "career"
-        )
+        selected_career = recommendations[0]["career"]
 
     score_result = get_match_score(
         user_skill_text=user_skill_text,
@@ -198,30 +198,41 @@ def analyze_user(
         target_career=selected_career
     )
 
-    result = {
+    missing_skills = []
+
+    if score_result.get("success"):
+
+        missing_skills = score_result.get(
+            "missing_skills",
+            []
+        )
+
+    elif skill_gap_result.get("success"):
+
+        missing_skills = skill_gap_result.get(
+            "missing_skills",
+            []
+        )
+
+    roadmap_result = None
+
+    if missing_skills:
+
+        roadmap_result = get_roadmap(
+            user_skill_text=user_skill_text,
+            target_career=selected_career,
+            missing_skills=missing_skills
+        )
+
+    return {
         "success": True,
         "timestamp": datetime.now().isoformat(),
         "selected_career": selected_career,
         "recommendations": recommendations,
         "match_score": score_result,
         "skill_gap": skill_gap_result,
-        "roadmap": None
+        "roadmap": roadmap_result
     }
-
-    if skill_gap_result.get("success"):
-
-        roadmap_result = get_roadmap(
-            user_skill_text=user_skill_text,
-            target_career=selected_career,
-            missing_skills=skill_gap_result.get(
-                "missing_skills",
-                []
-            )
-        )
-
-        result["roadmap"] = roadmap_result
-
-    return result
 
 
 if __name__ == "__main__":
