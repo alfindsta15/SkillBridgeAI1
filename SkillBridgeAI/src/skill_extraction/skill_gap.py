@@ -1,10 +1,13 @@
 import json
 from difflib import get_close_matches
+from src.skill_extraction.skills import SKILLS
+
+_skills_lower = [s.lower() for s in SKILLS]
 
 
 def normalize_skill_name(skill_name: str) -> str:
     """
-    Normalize skill name to map synonyms to a standard name.
+    Normalize skill name to map synonyms to a standard name and auto-correct typos.
     """
     s = skill_name.lower().strip()
     mapping = {
@@ -28,17 +31,20 @@ def normalize_skill_name(skill_name: str) -> str:
         "power bi": "power bi",
         "restapi": "rest api",
         "rest api": "rest api",
-        "javascript": "javascript",
-        "java script": "javascript",
         "js": "javascript",
-        "javscript": "javascript",
-        "typescript": "typescript",
-        "type script": "typescript",
         "ts": "typescript",
-        "typescrit": "typescript",
-        "typescrpt": "typescript",
     }
-    return mapping.get(s, s)
+    
+    s_mapped = mapping.get(s, s)
+    if s_mapped in _skills_lower:
+        return s_mapped
+        
+    # Fuzzy match with high similarity threshold (e.g. 75%)
+    matches = get_close_matches(s_mapped, _skills_lower, n=1, cutoff=0.75)
+    if matches:
+        return matches[0]
+        
+    return s_mapped
 
 
 def analyze_skill_gap(
