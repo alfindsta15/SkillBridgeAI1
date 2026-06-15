@@ -34,7 +34,7 @@ Thumbs.db
 .env
 .env.local
 .env.*
-.streamlit/secrets.toml
+**/.streamlit/secrets.toml
 
 # ====================================
 # Python Build
