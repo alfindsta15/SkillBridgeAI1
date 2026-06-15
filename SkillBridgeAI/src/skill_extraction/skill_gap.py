@@ -31,9 +31,12 @@ def normalize_skill_name(skill_name: str) -> str:
         "javascript": "javascript",
         "java script": "javascript",
         "js": "javascript",
+        "javscript": "javascript",
         "typescript": "typescript",
         "type script": "typescript",
         "ts": "typescript",
+        "typescrit": "typescript",
+        "typescrpt": "typescript",
     }
     return mapping.get(s, s)
 
