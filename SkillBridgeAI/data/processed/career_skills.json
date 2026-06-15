@@ -157,6 +157,8 @@
     {
         "career": "Associate Cybersecurity Analyst",
         "skills": [
+            "firewall basics",
+            "firewall management",
             "linux"
         ]
     },
@@ -170,13 +172,17 @@
     {
         "career": "Associate Network Engineer",
         "skills": [
+            "cisco",
+            "dhcp",
+            "dns",
             "python"
         ]
     },
     {
         "career": "Associate System Engineer",
         "skills": [
-            "linux"
+            "linux",
+            "tcp/ip"
         ]
     },
     {
@@ -244,6 +250,7 @@
             "c++",
             "collaboration",
             "communication",
+            "cryptography",
             "git",
             "java",
             "leadership",
@@ -313,6 +320,7 @@
         "skills": [
             "aws",
             "azure",
+            "dns",
             "docker",
             "git",
             "github",
@@ -320,7 +328,8 @@
             "leadership",
             "python",
             "sql",
-            "teamwork"
+            "teamwork",
+            "vpn"
         ]
     },
     {
@@ -368,7 +377,9 @@
         "career": "Cloud Security Analyst",
         "skills": [
             "aws",
-            "azure"
+            "azure",
+            "firewall management",
+            "siem tools"
         ]
     },
     {
@@ -410,13 +421,21 @@
     },
     {
         "career": "Cyber Defense Analyst",
-        "skills": []
+        "skills": [
+            "compliance auditing",
+            "firewall management",
+            "malware analysis",
+            "siem tools",
+            "soc operations",
+            "threat hunting"
+        ]
     },
     {
         "career": "Cybersecurity",
         "skills": [
             "c++",
             "linux",
+            "malware analysis",
             "python"
         ]
     },
@@ -426,19 +445,26 @@
             "aws",
             "azure",
             "c++",
+            "firewalls",
             "linux",
-            "python"
+            "malware analysis",
+            "python",
+            "soc operations",
+            "threat hunting"
         ]
     },
     {
         "career": "Cybersecurity Risk Analyst",
         "skills": [
+            "compliance auditing",
             "python"
         ]
     },
     {
         "career": "Cybersecurity Support Analyst",
         "skills": [
+            "cryptography",
+            "firewall management",
             "teamwork"
         ]
     },
@@ -580,33 +606,46 @@
     },
     {
         "career": "Enterprise Network Engineer",
-        "skills": []
+        "skills": [
+            "cisco",
+            "cisco asa",
+            "eigrp",
+            "f5 load balancer",
+            "firewalls",
+            "mpls",
+            "qos"
+        ]
     },
     {
         "career": "Entry",
         "skills": [
             "c++",
+            "dns",
             "git",
             "github",
             "java",
             "kotlin",
+            "malware analysis",
+            "nagios",
             "python",
             "pytorch",
             "rest api",
             "statistics",
             "swift",
+            "tcp/ip",
             "tensorflow"
         ]
     },
     {
         "career": "Ethical Hacker",
         "skills": [
-            "analytical skills",
             "c++",
             "communication",
+            "cryptography",
             "javascript",
             "leadership",
             "linux",
+            "malware analysis",
             "python",
             "teamwork"
         ]
@@ -686,6 +725,7 @@
     {
         "career": "Graduate Network Engineer",
         "skills": [
+            "lan/wan",
             "python"
         ]
     },
@@ -693,6 +733,7 @@
         "career": "Graduate Security Analyst",
         "skills": [
             "linux",
+            "malware analysis",
             "python"
         ]
     },
@@ -717,11 +758,15 @@
     },
     {
         "career": "Incident Response Analyst",
-        "skills": []
+        "skills": [
+            "malware analysis",
+            "threat hunting"
+        ]
     },
     {
         "career": "Information Security Analyst",
         "skills": [
+            "firewall basics",
             "python"
         ]
     },
@@ -734,7 +779,12 @@
     {
         "career": "Infrastructure Network Engineer",
         "skills": [
-            "python"
+            "cisco",
+            "lan/wan",
+            "nagios",
+            "network monitoring",
+            "python",
+            "qos"
         ]
     },
     {
@@ -823,12 +873,18 @@
             "power bi",
             "python",
             "tableau",
+            "tcp/ip",
             "teamwork"
         ]
     },
     {
         "career": "It Support",
-        "skills": []
+        "skills": [
+            "dns",
+            "lan/wan",
+            "network troubleshooting",
+            "tcp/ip"
+        ]
     },
     {
         "career": "Java Developer",
@@ -894,7 +950,8 @@
     {
         "career": "Lead Cybersecurity Analyst",
         "skills": [
-            "leadership"
+            "leadership",
+            "threat hunting"
         ]
     },
     {
@@ -962,7 +1019,12 @@
     {
         "career": "Lead Network Engineer",
         "skills": [
-            "leadership"
+            "cisco",
+            "cisco nexus",
+            "f5 load balancer",
+            "firewalls",
+            "leadership",
+            "mpls"
         ]
     },
     {
@@ -1074,29 +1136,72 @@
     },
     {
         "career": "Network",
-        "skills": []
+        "skills": [
+            "cisco",
+            "dhcp",
+            "vpn"
+        ]
     },
     {
         "career": "Network Automation Engineer",
         "skills": [
+            "cisco",
             "python"
         ]
     },
     {
         "career": "Network Engineer",
-        "skills": []
+        "skills": [
+            "bgp",
+            "cisco",
+            "cisco asa",
+            "cisco nexus",
+            "cisco routers",
+            "dhcp",
+            "dns",
+            "firewalls",
+            "ids/ips",
+            "lan/wan",
+            "mpls",
+            "nagios",
+            "ospf",
+            "qos",
+            "solarwinds",
+            "tcp/ip"
+        ]
     },
     {
         "career": "Network Operations Center (noc) Engineer",
-        "skills": []
+        "skills": [
+            "incident management",
+            "nagios",
+            "network monitoring",
+            "solarwinds",
+            "tcp/ip"
+        ]
     },
     {
         "career": "Network Security Engineer",
-        "skills": []
+        "skills": [
+            "cisco",
+            "cisco asa",
+            "cryptography",
+            "firewalls",
+            "ids/ips",
+            "vpn"
+        ]
     },
     {
         "career": "Network Support Engineer",
-        "skills": []
+        "skills": [
+            "bgp",
+            "firewall basics",
+            "ospf",
+            "routing basics",
+            "solarwinds",
+            "vpn",
+            "vpn setup"
+        ]
     },
     {
         "career": "Operations Manager",
@@ -1162,13 +1267,17 @@
     {
         "career": "Principal Network Engineer",
         "skills": [
+            "cisco",
+            "cisco nexus",
             "leadership"
         ]
     },
     {
         "career": "Principal Security Analyst",
         "skills": [
-            "leadership"
+            "leadership",
+            "siem tools",
+            "threat hunting"
         ]
     },
     {
@@ -1273,14 +1382,22 @@
     },
     {
         "career": "Security & Network Engineer",
-        "skills": []
+        "skills": [
+            "cisco",
+            "cisco routers",
+            "firewall basics",
+            "ids/ips",
+            "vpn"
+        ]
     },
     {
         "career": "Security Analyst",
         "skills": [
             "collaboration",
+            "cryptography",
             "javascript",
             "linux",
+            "malware analysis",
             "python"
         ]
     },
@@ -1302,19 +1419,25 @@
             "azure",
             "collaboration",
             "communication",
+            "dns",
             "docker",
             "github",
             "java",
             "kubernetes",
             "leadership",
             "linux",
-            "python"
+            "nagios",
+            "python",
+            "tcp/ip"
         ]
     },
     {
         "career": "Soc Analyst",
         "skills": [
-            "python"
+            "malware analysis",
+            "python",
+            "siem tools",
+            "threat hunting"
         ]
     },
     {
@@ -1428,9 +1551,12 @@
             "aws",
             "azure",
             "docker",
+            "firewalls",
             "kubernetes",
             "linux",
-            "python"
+            "nagios",
+            "python",
+            "tcp/ip"
         ]
     },
     {
@@ -1443,7 +1569,15 @@
     },
     {
         "career": "Telecom & Network Engineer",
-        "skills": []
+        "skills": [
+            "bgp",
+            "cisco",
+            "cisco routers",
+            "lan/wan",
+            "qos",
+            "sip",
+            "voip"
+        ]
     },
     {
         "career": "Test Automation Engineer",
