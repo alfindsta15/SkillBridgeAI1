@@ -1,5 +1,6 @@
 import json
 import logging
+from datetime import datetime
 
 from src.recommender.recommend import recommend_career
 from src.skill_extraction.skill_gap import analyze_skill_gap
@@ -10,12 +11,10 @@ try:
 except ImportError:
     calculate_match_score = None
 
-
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s | %(levelname)s | %(message)s"
 )
-
 
 def validate_input(user_skill_text: str):
 
@@ -35,16 +34,14 @@ def get_recommendations(
 
     try:
 
-        result = recommend_career(
+        return recommend_career(
             user_skill_text=user_skill_text,
             top_k=top_k
         )
 
-        return result
-
     except Exception as e:
 
-        logging.exception("Error Recommendation")
+        logging.exception("Recommendation Error")
 
         return {
             "success": False,
@@ -72,7 +69,7 @@ def get_skill_gap(
 
     except Exception as e:
 
-        logging.exception("Error Skill Gap")
+        logging.exception("Skill Gap Error")
 
         return {
             "success": False,
@@ -101,7 +98,7 @@ def get_match_score(
 
     except Exception as e:
 
-        logging.exception("Error Scoring")
+        logging.exception("Scoring Error")
 
         return {
             "success": False,
@@ -141,7 +138,7 @@ def get_roadmap(
 
     except Exception as e:
 
-        logging.exception("Error Roadmap")
+        logging.exception("Roadmap Error")
 
         return {
             "success": False,
@@ -169,12 +166,16 @@ def analyze_user(
         top_k=top_k
     )
 
-    if not recommendation_result["success"]:
+    if not recommendation_result.get("success"):
+
         return recommendation_result
 
-    recommendations = recommendation_result["recommendations"]
+    recommendations = recommendation_result.get(
+        "recommendations",
+        []
+    )
 
-    if len(recommendations) == 0:
+    if not recommendations:
 
         return {
             "success": False,
@@ -182,7 +183,10 @@ def analyze_user(
         }
 
     if selected_career is None:
-        selected_career = recommendations[0]["career"]
+
+        selected_career = recommendations[0].get(
+            "career"
+        )
 
     score_result = get_match_score(
         user_skill_text=user_skill_text,
@@ -196,10 +200,12 @@ def analyze_user(
 
     result = {
         "success": True,
+        "timestamp": datetime.now().isoformat(),
         "selected_career": selected_career,
         "recommendations": recommendations,
         "match_score": score_result,
-        "skill_gap": skill_gap_result
+        "skill_gap": skill_gap_result,
+        "roadmap": None
     }
 
     if skill_gap_result.get("success"):
