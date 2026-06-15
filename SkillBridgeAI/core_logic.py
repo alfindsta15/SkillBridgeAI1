@@ -1,12 +1,24 @@
 import json
+import logging
 
 from src.recommender.recommend import recommend_career
 from src.skill_extraction.skill_gap import analyze_skill_gap
 from src.roadmap.generator import generate_roadmap_json
-# from src.scoring.scoring ????
+
+try:
+    from src.scoring.scoring import calculate_match_score
+except ImportError:
+    calculate_match_score = None
+
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 def validate_input(user_skill_text: str):
+
     if not user_skill_text:
         return False, "Masukkan minimal 1 skill"
 
@@ -20,26 +32,81 @@ def get_recommendations(
     user_skill_text: str,
     top_k: int = 5
 ):
-    return recommend_career(
-        user_skill_text=user_skill_text,
-        top_k=top_k
-    )
+
+    try:
+
+        result = recommend_career(
+            user_skill_text=user_skill_text,
+            top_k=top_k
+        )
+
+        return result
+
+    except Exception as e:
+
+        logging.exception("Error Recommendation")
+
+        return {
+            "success": False,
+            "message": str(e)
+        }
 
 
 def get_skill_gap(
     user_skill_text: str,
     target_career: str
 ):
-    user_skills = [
-        skill.strip()
-        for skill in user_skill_text.split(",")
-        if skill.strip()
-    ]
 
-    return analyze_skill_gap(
-        user_skills=user_skills,
-        target_career=target_career
-    )
+    try:
+
+        user_skills = [
+            skill.strip()
+            for skill in user_skill_text.split(",")
+            if skill.strip()
+        ]
+
+        return analyze_skill_gap(
+            user_skills=user_skills,
+            target_career=target_career
+        )
+
+    except Exception as e:
+
+        logging.exception("Error Skill Gap")
+
+        return {
+            "success": False,
+            "message": str(e)
+        }
+
+
+def get_match_score(
+    user_skill_text: str,
+    target_career: str
+):
+
+    if calculate_match_score is None:
+
+        return {
+            "success": False,
+            "message": "Modul scoring belum tersedia"
+        }
+
+    try:
+
+        return calculate_match_score(
+            user_skill_text=user_skill_text,
+            target_career=target_career
+        )
+
+    except Exception as e:
+
+        logging.exception("Error Scoring")
+
+        return {
+            "success": False,
+            "message": str(e)
+        }
 
 
 def get_roadmap(
@@ -47,7 +114,9 @@ def get_roadmap(
     target_career: str,
     missing_skills: list
 ):
+
     try:
+
         roadmap_raw = generate_roadmap_json(
             user_skills=user_skill_text,
             job_title=target_career,
@@ -55,6 +124,7 @@ def get_roadmap(
         )
 
         try:
+
             roadmap_data = json.loads(roadmap_raw)
 
             return {
@@ -63,12 +133,16 @@ def get_roadmap(
             }
 
         except Exception:
+
             return {
                 "success": True,
                 "data": roadmap_raw
             }
 
     except Exception as e:
+
+        logging.exception("Error Roadmap")
+
         return {
             "success": False,
             "message": str(e)
@@ -80,9 +154,11 @@ def analyze_user(
     selected_career: str = None,
     top_k: int = 5
 ):
+
     valid, error = validate_input(user_skill_text)
 
     if not valid:
+
         return {
             "success": False,
             "message": error
@@ -99,6 +175,7 @@ def analyze_user(
     recommendations = recommendation_result["recommendations"]
 
     if len(recommendations) == 0:
+
         return {
             "success": False,
             "message": "Tidak ada rekomendasi karir ditemukan"
@@ -107,6 +184,11 @@ def analyze_user(
     if selected_career is None:
         selected_career = recommendations[0]["career"]
 
+    score_result = get_match_score(
+        user_skill_text=user_skill_text,
+        target_career=selected_career
+    )
+
     skill_gap_result = get_skill_gap(
         user_skill_text=user_skill_text,
         target_career=selected_career
@@ -114,16 +196,21 @@ def analyze_user(
 
     result = {
         "success": True,
-        "recommendations": recommendations,
         "selected_career": selected_career,
+        "recommendations": recommendations,
+        "match_score": score_result,
         "skill_gap": skill_gap_result
     }
 
-    if skill_gap_result["success"]:
+    if skill_gap_result.get("success"):
+
         roadmap_result = get_roadmap(
             user_skill_text=user_skill_text,
             target_career=selected_career,
-            missing_skills=skill_gap_result["missing_skills"]
+            missing_skills=skill_gap_result.get(
+                "missing_skills",
+                []
+            )
         )
 
         result["roadmap"] = roadmap_result
@@ -132,6 +219,7 @@ def analyze_user(
 
 
 if __name__ == "__main__":
+
     result = analyze_user(
         user_skill_text="python, sql, excel"
     )
