@@ -124,12 +124,25 @@ def analyze_selected_job(user_input_text,selected_job_title,data_df,model_encode
             if best_similarity >= 0.7:  #treshold SBERT u/ mencocokkan skill
                 matched_skills.append(job_skill)
     missing_skills = sorted(list(set(job_skills) - set(matched_skills)))
+    #kalkulasi skor kesiapan(readiness score)
+    total_skills_count = len(job_skills)
+    matched_skills_count = len(matched_skills)
 
+    # Antisipasi jika di database pekerjaan tersebut tidak mencantumkan skill sama sekali
+    if total_skills_count > 0:
+        readiness_score = (matched_skills_count / total_skills_count) * 100
+    else:
+        readiness_score = 0.0
+
+    gap_percentage = 100.0 - readiness_score
+    
     return {
         "job": selected_job_title,
         "semantic_match":f"{semantic_score:.2f}%",
         "matched_skills":sorted(matched_skills),
-        "missing_skills":missing_skills}
+        "missing_skills":missing_skills,
+        "readiness_score":f"{readiness_score:.2f}%",
+        "gap_percentage":f"{gap_percentage:.2f}%"}
 
 user_input = "python, hadoop"
 selected_job = "Data Analyst"
