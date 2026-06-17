@@ -12,7 +12,7 @@ def generate_roadmap_json(user_skills, job_title, job_requirements):
         GOOGLE_API_KEY = st.secrets["PROJECT_CELERATES"]
         genai.configure(api_key=GOOGLE_API_KEY)
     except Exception as e:
-        print(f"❌ Gagal mengambil API Key. Periksa .streamlit/secrets.toml: {e}")
+        print(f"Gagal mengambil API Key. Periksa .streamlit/secrets.toml: {e}")
         return json.dumps({"error": "API Key tidak terkonfigurasi dengan benar."})
     
     # Menggunakan model Gemini terbaru untuk pemrosesan logika backend
