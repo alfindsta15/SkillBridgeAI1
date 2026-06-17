@@ -16,12 +16,13 @@ COPY requirements.txt .
 # Install dependensi Python
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Pre-download SentenceTransformer model agar ter-cache di dalam Docker image
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2')"
+
 # Copy seluruh file aplikasi ke dalam container
 COPY . .
 
-# Set environment variables untuk Python offline mode (untuk hugging face hub offline)
-ENV TRANSFORMERS_OFFLINE=1
-ENV HF_HUB_OFFLINE=1
+# Set environment variables untuk production run
 ENV PYTHONUNBUFFERED=1
 
 # Expose port (default 8000, atau otomatis membaca port dari server host seperti Render/Railway/HuggingFace)
