@@ -56,11 +56,38 @@ np.save(
     embeddings_array
 )
 
-unique_careers_df = pd.DataFrame({"career": unique_careers})
+# Group by career and aggregate columns to preserve them in career_profiles.csv
+# This is required because scoring.py loads career_profiles.csv directly and expects Title, Skills, Keywords, Responsibilities
+def combine_unique_skills(series):
+    skills = set()
+    for row in series.dropna():
+        for skill in str(row).replace(";", ",").split(","):
+            skill = skill.strip()
+            if skill:
+                skills.add(skill)
+    return "; ".join(sorted(skills))
+
+def combine_unique_keywords(series):
+    keywords = set()
+    for row in series.dropna():
+        for kw in str(row).replace(";", ",").split(","):
+            kw = kw.strip()
+            if kw:
+                keywords.add(kw)
+    return " ".join(sorted(keywords))
+
+unique_careers_df = df.groupby("career", as_index=False).agg({
+    "Skills": combine_unique_skills,
+    "Keywords": combine_unique_keywords,
+    "Responsibilities": lambda x: " ".join(x.dropna().astype(str))
+})
+unique_careers_df["Title"] = unique_careers_df["career"]
+unique_careers_df = unique_careers_df[["career", "Title", "Skills", "Keywords", "Responsibilities"]]
+
 unique_careers_df.to_csv(
     "data/processed/career_profiles.csv",
     index=False
 )
 
-print("Saved embeddings and unique careers list.")
+print("Saved embeddings and unique careers list with all scoring columns.")
 print("Shape:", embeddings_array.shape)

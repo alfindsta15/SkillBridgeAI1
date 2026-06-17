@@ -2,591 +2,469 @@
     {
         "career": ".net Developer",
         "skills": [
+            "angular",
+            "azure",
             "c#",
+            "communication",
             "css",
-            "java",
+            "docker",
+            "git",
+            "html",
+            "javascript",
+            "kubernetes",
+            "leadership",
             "sql"
         ]
     },
     {
-        "career": "Account Executive",
+        "career": "Ai Engineer",
         "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Account Manager",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Account Officer",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Account Payable",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Account Payable Staff",
-        "skills": []
-    },
-    {
-        "career": "Account Receivable",
-        "skills": []
-    },
-    {
-        "career": "Account Receivable Staff",
-        "skills": []
-    },
-    {
-        "career": "Accountant",
-        "skills": []
-    },
-    {
-        "career": "Accounting",
-        "skills": [
-            "teamwork",
-            "word"
-        ]
-    },
-    {
-        "career": "Accounting & Tax",
-        "skills": []
-    },
-    {
-        "career": "Accounting & Tax Staff",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Accounting & Tax Supervisor",
-        "skills": []
-    },
-    {
-        "career": "Accounting Manager",
-        "skills": [
-            "java"
-        ]
-    },
-    {
-        "career": "Accounting Officer",
-        "skills": [
-            "word"
-        ]
-    },
-    {
-        "career": "Accounting Staff",
-        "skills": [
-            "excel",
+            "aws",
+            "azure",
+            "c++",
+            "docker",
             "java",
-            "word"
+            "kubernetes",
+            "mongodb",
+            "python",
+            "pytorch",
+            "sql",
+            "tensorflow"
         ]
     },
     {
-        "career": "Accounting Supervisor",
-        "skills": []
-    },
-    {
-        "career": "Admin",
+        "career": "Ai Prompt Engineer",
         "skills": [
-            "excel",
-            "powerpoint",
-            "word"
-        ]
-    },
-    {
-        "career": "Admin Accounting",
-        "skills": [
+            "azure",
+            "collaboration",
             "communication",
-            "excel"
+            "data analysis",
+            "javascript",
+            "leadership",
+            "machine learning",
+            "python",
+            "pytorch",
+            "teamwork",
+            "tensorflow"
         ]
     },
     {
-        "career": "Admin Finance",
-        "skills": []
-    },
-    {
-        "career": "Admin Gudang",
-        "skills": []
-    },
-    {
-        "career": "Admin Marketing",
+        "career": "Android App Developer",
         "skills": [
-            "excel",
-            "negotiation",
-            "word"
+            "git",
+            "java",
+            "kotlin",
+            "rest api"
         ]
     },
     {
-        "career": "Admin Marketplace",
+        "career": "Android Architect",
         "skills": [
-            "communication",
-            "excel",
-            "word"
+            "firebase",
+            "java",
+            "kotlin",
+            "rest api"
         ]
-    },
-    {
-        "career": "Admin Officer",
-        "skills": []
-    },
-    {
-        "career": "Admin Online",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Admin Online Shop",
-        "skills": [
-            "word"
-        ]
-    },
-    {
-        "career": "Admin Project",
-        "skills": [
-            "communication",
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Admin Purchasing",
-        "skills": [
-            "communication",
-            "excel",
-            "negotiation",
-            "word"
-        ]
-    },
-    {
-        "career": "Admin Sales",
-        "skills": [
-            "communication",
-            "excel"
-        ]
-    },
-    {
-        "career": "Admin Staff",
-        "skills": [
-            "word"
-        ]
-    },
-    {
-        "career": "Administrasi",
-        "skills": [
-            "communication",
-            "excel",
-            "powerpoint"
-        ]
-    },
-    {
-        "career": "Administration Staff",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Administrator",
-        "skills": [
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Agent Sales Officer (aso Development Program)",
-        "skills": []
     },
     {
         "career": "Android Developer",
         "skills": [
-            "collaboration",
+            "firebase",
+            "git",
             "java",
+            "kotlin",
+            "rest api"
+        ]
+    },
+    {
+        "career": "Android Development",
+        "skills": [
+            "git",
+            "java",
+            "kotlin",
+            "rest api"
+        ]
+    },
+    {
+        "career": "Android Engineer",
+        "skills": [
+            "firebase",
+            "git",
+            "java",
+            "kotlin",
+            "rest api"
+        ]
+    },
+    {
+        "career": "Android Solutions Architect",
+        "skills": [
+            "firebase",
+            "java",
+            "kotlin",
+            "rest api"
+        ]
+    },
+    {
+        "career": "Android Solutions Engineer",
+        "skills": [
+            "firebase",
+            "java",
+            "kotlin",
+            "rest api"
+        ]
+    },
+    {
+        "career": "Android Tech Lead",
+        "skills": [
+            "firebase",
+            "java",
+            "kotlin",
+            "rest api"
+        ]
+    },
+    {
+        "career": "Ar/vr Developer",
+        "skills": [
+            "c#",
+            "c++",
+            "collaboration",
+            "communication",
+            "javascript",
+            "leadership",
+            "machine learning",
+            "python",
             "teamwork"
         ]
     },
     {
-        "career": "Apoteker",
+        "career": "Associate Android Developer",
         "skills": [
-            "communication"
+            "git",
+            "java",
+            "kotlin",
+            "rest api"
         ]
     },
     {
-        "career": "Apoteker Penanggung Jawab",
-        "skills": []
-    },
-    {
-        "career": "Architect",
+        "career": "Associate Cloud Architect",
         "skills": [
-            "communication",
-            "photoshop"
+            "aws",
+            "azure",
+            "docker",
+            "linux"
         ]
     },
     {
-        "career": "Area Sales Manager",
-        "skills": []
-    },
-    {
-        "career": "Area Sales Manager (asm)",
+        "career": "Associate Cybersecurity Analyst",
         "skills": [
-            "java"
+            "firewall basics",
+            "firewall management",
+            "linux"
         ]
     },
     {
-        "career": "Area Sales Supervisor",
+        "career": "Associate Ios Engineer",
         "skills": [
-            "problem solving",
-            "teamwork"
+            "git",
+            "swift"
         ]
     },
     {
-        "career": "Arsitek",
+        "career": "Associate Network Engineer",
         "skills": [
-            "photoshop"
+            "cisco",
+            "dhcp",
+            "dns",
+            "python"
         ]
     },
     {
-        "career": "Art Director",
+        "career": "Associate System Engineer",
         "skills": [
-            "communication",
-            "leadership"
+            "linux",
+            "tcp/ip"
         ]
     },
     {
-        "career": "Asisten Apoteker",
+        "career": "Associate Ux Designer",
         "skills": [
-            "communication"
+            "collaboration",
+            "figma"
         ]
-    },
-    {
-        "career": "Assistant Director Of Sales",
-        "skills": []
-    },
-    {
-        "career": "Assistant Financial Controller",
-        "skills": []
-    },
-    {
-        "career": "Assistant Front Office Manager",
-        "skills": []
-    },
-    {
-        "career": "Assistant Manager",
-        "skills": []
-    },
-    {
-        "career": "Assistant Sales Manager",
-        "skills": [
-            "analytical skills",
-            "communication"
-        ]
-    },
-    {
-        "career": "Assistant Spa Manager",
-        "skills": []
-    },
-    {
-        "career": "Associate Product Manager",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Attendant-food & Beverage",
-        "skills": []
     },
     {
         "career": "Backend Developer",
         "skills": [
+            "aws",
+            "azure",
             "docker",
             "express",
+            "git",
             "graphql",
             "java",
+            "kubernetes",
+            "mongodb",
+            "mysql",
+            "node.js",
+            "postgresql",
+            "python",
+            "redis",
+            "sql"
+        ]
+    },
+    {
+        "career": "Bi Analyst",
+        "skills": [
+            "data analysis",
+            "excel",
+            "mysql",
+            "postgresql",
+            "power bi",
             "sql",
-            "typescript"
+            "statistics",
+            "tableau"
         ]
     },
     {
-        "career": "Baker",
-        "skills": []
+        "career": "Big Data Specialist",
+        "skills": [
+            "aws",
+            "azure",
+            "collaboration",
+            "java",
+            "leadership",
+            "linux",
+            "machine learning",
+            "mongodb",
+            "power bi",
+            "python",
+            "sql",
+            "tableau",
+            "teamwork",
+            "tensorflow"
+        ]
     },
     {
-        "career": "Barista",
+        "career": "Blockchain Developer",
         "skills": [
+            "c++",
+            "collaboration",
+            "communication",
+            "cryptography",
+            "git",
+            "java",
+            "leadership",
+            "python",
             "teamwork"
-        ]
-    },
-    {
-        "career": "Bartender",
-        "skills": []
-    },
-    {
-        "career": "Beautician",
-        "skills": []
-    },
-    {
-        "career": "Branch Manager",
-        "skills": []
-    },
-    {
-        "career": "Brand Executive",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Brand Manager",
-        "skills": [
-            "communication"
         ]
     },
     {
         "career": "Business Analyst",
         "skills": [
-            "communication",
-            "problem solving"
-        ]
-    },
-    {
-        "career": "Business Analytics",
-        "skills": []
-    },
-    {
-        "career": "Business Development",
-        "skills": [
-            "communication",
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Business Development Associate",
-        "skills": []
-    },
-    {
-        "career": "Business Development Executive",
-        "skills": []
-    },
-    {
-        "career": "Business Development Intern",
-        "skills": []
-    },
-    {
-        "career": "Business Development Manager",
-        "skills": [
             "collaboration",
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Business Development Officer",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Business Development Specialist",
-        "skills": []
-    },
-    {
-        "career": "Business Manager",
-        "skills": []
-    },
-    {
-        "career": "Butler",
-        "skills": []
-    },
-    {
-        "career": "Call Center",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Captain Resto",
-        "skills": []
-    },
-    {
-        "career": "Cashier",
-        "skills": [
             "communication",
-            "excel"
+            "data analysis",
+            "excel",
+            "leadership",
+            "power bi",
+            "problem solving",
+            "sql",
+            "tableau"
         ]
     },
     {
-        "career": "Chef",
+        "career": "Cloud",
         "skills": [
-            "communication"
+            "aws",
+            "azure",
+            "python"
         ]
     },
     {
-        "career": "Chef De Cuisine",
+        "career": "Cloud Architect",
         "skills": [
-            "communication"
+            "aws",
+            "azure",
+            "docker",
+            "kubernetes",
+            "leadership",
+            "python"
         ]
     },
     {
-        "career": "Chef De Partie",
+        "career": "Cloud Automation Engineer",
         "skills": [
-            "communication"
+            "aws",
+            "kubernetes",
+            "python"
         ]
     },
     {
-        "career": "Chef De Partie - Pastry",
-        "skills": []
+        "career": "Cloud Cost Optimization Architect",
+        "skills": [
+            "aws",
+            "azure",
+            "python"
+        ]
     },
     {
-        "career": "Chief Accountant",
-        "skills": []
-    },
-    {
-        "career": "Chief Engineer",
-        "skills": []
-    },
-    {
-        "career": "Chief Engineering",
-        "skills": []
-    },
-    {
-        "career": "Citigold Acquisition Team",
-        "skills": []
-    },
-    {
-        "career": "Citigold Acquisition Team - Jakarta",
-        "skills": []
-    },
-    {
-        "career": "Civil Engineer",
-        "skills": []
-    },
-    {
-        "career": "Cleaning Service",
-        "skills": []
-    },
-    {
-        "career": "Clerk-front Desk",
-        "skills": []
+        "career": "Cloud Devsecops Architect",
+        "skills": [
+            "aws",
+            "azure",
+            "python"
+        ]
     },
     {
         "career": "Cloud Engineer",
         "skills": [
+            "aws",
+            "azure",
+            "dns",
+            "docker",
+            "git",
+            "github",
+            "kubernetes",
+            "leadership",
+            "python",
+            "sql",
+            "teamwork",
+            "vpn"
+        ]
+    },
+    {
+        "career": "Cloud Infrastructure Architect",
+        "skills": [
+            "aws",
+            "azure",
+            "python"
+        ]
+    },
+    {
+        "career": "Cloud Infrastructure Security Architect",
+        "skills": [
+            "aws",
+            "azure",
             "kubernetes"
         ]
     },
     {
-        "career": "Commercial Specialist",
-        "skills": []
-    },
-    {
-        "career": "Commis",
-        "skills": []
-    },
-    {
-        "career": "Content Creator",
+        "career": "Cloud Migration Specialist",
         "skills": [
-            "communication",
-            "photoshop"
+            "aws",
+            "azure",
+            "python"
+        ]
+    },
+    {
+        "career": "Cloud Network Engineer",
+        "skills": [
+            "aws",
+            "azure"
+        ]
+    },
+    {
+        "career": "Cloud Platform Architect",
+        "skills": [
+            "aws",
+            "azure",
+            "docker",
+            "kubernetes",
+            "python"
+        ]
+    },
+    {
+        "career": "Cloud Security Analyst",
+        "skills": [
+            "aws",
+            "azure",
+            "firewall management",
+            "siem tools"
+        ]
+    },
+    {
+        "career": "Cloud Security Architect",
+        "skills": [
+            "aws",
+            "azure",
+            "python"
+        ]
+    },
+    {
+        "career": "Cloud Solutions Associate",
+        "skills": [
+            "aws",
+            "docker",
+            "java",
+            "linux",
+            "python"
         ]
     },
     {
         "career": "Content Writer",
         "skills": [
+            "collaboration",
             "communication",
-            "seo"
+            "leadership",
+            "seo",
+            "teamwork"
         ]
-    },
-    {
-        "career": "Coo Office Project Manager",
-        "skills": []
-    },
-    {
-        "career": "Cook",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Cook Helper",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Cook Ii",
-        "skills": []
     },
     {
         "career": "Copywriter",
         "skills": [
+            "collaboration",
             "communication",
+            "leadership",
             "seo"
         ]
     },
     {
-        "career": "Corporate Account Manager Jakarta",
-        "skills": []
-    },
-    {
-        "career": "Creative Designer",
+        "career": "Cyber Defense Analyst",
         "skills": [
-            "communication",
-            "illustrator",
-            "photoshop"
+            "compliance auditing",
+            "firewall management",
+            "malware analysis",
+            "siem tools",
+            "soc operations",
+            "threat hunting"
         ]
     },
     {
-        "career": "Credit Manager",
-        "skills": []
-    },
-    {
-        "career": "Crew Outlet",
-        "skills": []
-    },
-    {
-        "career": "Crew Store",
-        "skills": []
-    },
-    {
-        "career": "Customer Relation Officer",
+        "career": "Cybersecurity",
         "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Customer Service",
-        "skills": [
-            "communication",
-            "photoshop"
-        ]
-    },
-    {
-        "career": "Customer Service Officer",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Customer Service Representative",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Customer Service Staff",
-        "skills": [
-            "communication",
-            "problem solving"
-        ]
-    },
-    {
-        "career": "Customer Support",
-        "skills": [
-            "communication",
+            "c++",
             "linux",
+            "malware analysis",
+            "python"
+        ]
+    },
+    {
+        "career": "Cybersecurity Analyst",
+        "skills": [
+            "aws",
+            "azure",
+            "c++",
+            "firewalls",
+            "linux",
+            "malware analysis",
+            "python",
+            "soc operations",
+            "threat hunting"
+        ]
+    },
+    {
+        "career": "Cybersecurity Risk Analyst",
+        "skills": [
+            "compliance auditing",
+            "python"
+        ]
+    },
+    {
+        "career": "Cybersecurity Support Analyst",
+        "skills": [
+            "cryptography",
+            "firewall management",
             "teamwork"
         ]
     },
@@ -595,2244 +473,1240 @@
         "skills": [
             "data analysis",
             "excel",
-            "powerpoint",
-            "word"
+            "leadership",
+            "machine learning",
+            "mysql",
+            "postgresql",
+            "power bi",
+            "python",
+            "sql",
+            "statistics",
+            "tableau"
+        ]
+    },
+    {
+        "career": "Data Analyst / Data Scientist",
+        "skills": [
+            "machine learning",
+            "mongodb",
+            "mysql",
+            "python",
+            "sql"
         ]
     },
     {
         "career": "Data Engineer",
-        "skills": []
+        "skills": [
+            "aws",
+            "azure",
+            "java",
+            "linux",
+            "mongodb",
+            "mysql",
+            "postgresql",
+            "python",
+            "sql"
+        ]
+    },
+    {
+        "career": "Data Science",
+        "skills": [
+            "data analysis",
+            "machine learning",
+            "mysql",
+            "postgresql",
+            "python",
+            "sql"
+        ]
+    },
+    {
+        "career": "Data Science Associate",
+        "skills": [
+            "data analysis",
+            "machine learning",
+            "mysql",
+            "postgresql",
+            "python",
+            "sql"
+        ]
+    },
+    {
+        "career": "Data Science Team Lead",
+        "skills": [
+            "aws",
+            "java",
+            "leadership",
+            "machine learning",
+            "power bi",
+            "python",
+            "sql",
+            "tableau"
+        ]
     },
     {
         "career": "Data Scientist",
         "skills": [
-            "leadership",
+            "aws",
+            "data analysis",
+            "excel",
+            "git",
+            "java",
             "machine learning",
-            "statistics"
-        ]
-    },
-    {
-        "career": "Database Administrator",
-        "skills": [
-            "linux",
-            "mysql",
-            "sql"
-        ]
-    },
-    {
-        "career": "Database Engineer",
-        "skills": [
-            "firebase",
             "mongodb",
             "mysql",
-            "sql"
-        ]
-    },
-    {
-        "career": "Demi Chef",
-        "skills": []
-    },
-    {
-        "career": "Demi Chef De Partie",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Dental Consultant",
-        "skills": []
-    },
-    {
-        "career": "Deputy Client Manager (corporate & Reputation)",
-        "skills": []
-    },
-    {
-        "career": "Deputy Store Manager",
-        "skills": []
-    },
-    {
-        "career": "Desain Grafis",
-        "skills": [
-            "communication",
-            "photoshop"
-        ]
-    },
-    {
-        "career": "Design Grafis",
-        "skills": [
-            "communication",
-            "illustrator",
-            "photoshop"
-        ]
-    },
-    {
-        "career": "Design Graphic",
-        "skills": [
-            "communication",
-            "illustrator",
-            "photoshop"
-        ]
-    },
-    {
-        "career": "Designer",
-        "skills": [
-            "communication",
-            "illustrator",
-            "photoshop"
-        ]
-    },
-    {
-        "career": "Desk Collection",
-        "skills": []
-    },
-    {
-        "career": "Developer",
-        "skills": [
-            "c#",
-            "css",
-            "html",
+            "postgresql",
+            "power bi",
+            "python",
             "sql",
-            "teamwork"
+            "tableau"
+        ]
+    },
+    {
+        "career": "Devops Cloud Architect",
+        "skills": [
+            "aws",
+            "azure",
+            "docker",
+            "kubernetes",
+            "python"
         ]
     },
     {
         "career": "Devops Engineer",
         "skills": [
-            "java",
-            "linux"
-        ]
-    },
-    {
-        "career": "Digital Marketing",
-        "skills": [
-            "seo"
-        ]
-    },
-    {
-        "career": "Digital Marketing Executive",
-        "skills": [
-            "analytical skills",
-            "sem",
-            "seo"
-        ]
-    },
-    {
-        "career": "Digital Marketing Manager",
-        "skills": [
-            "sem",
-            "seo"
-        ]
-    },
-    {
-        "career": "Digital Marketing Officer",
-        "skills": [
-            "communication",
-            "google ads",
-            "photoshop",
-            "sem",
-            "seo"
+            "aws",
+            "azure",
+            "docker",
+            "git",
+            "github",
+            "kubernetes",
+            "linux",
+            "python"
         ]
     },
     {
         "career": "Digital Marketing Specialist",
         "skills": [
-            "analytical skills",
+            "collaboration",
             "communication",
-            "css",
-            "html",
+            "google ads",
+            "leadership",
             "sem",
-            "seo"
-        ]
-    },
-    {
-        "career": "Direct Sales",
-        "skills": []
-    },
-    {
-        "career": "Director Of Operations",
-        "skills": []
-    },
-    {
-        "career": "Director Of Revenue Management",
-        "skills": []
-    },
-    {
-        "career": "Director Of Sales",
-        "skills": []
-    },
-    {
-        "career": "Director Of Sales & Marketing",
-        "skills": []
-    },
-    {
-        "career": "Dokter",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Dokter Hewan",
-        "skills": []
-    },
-    {
-        "career": "Dokter Kecantikan",
-        "skills": []
-    },
-    {
-        "career": "Dokter Umum",
-        "skills": []
-    },
-    {
-        "career": "Drafter",
-        "skills": [
-            "excel",
-            "photoshop",
-            "word"
-        ]
-    },
-    {
-        "career": "Drafter Interior",
-        "skills": [
+            "seo",
+            "tableau",
             "teamwork"
         ]
     },
     {
-        "career": "Driver",
-        "skills": []
-    },
-    {
-        "career": "Duty Engineer",
-        "skills": []
-    },
-    {
-        "career": "Duty Manager",
+        "career": "Enterprise Cloud Architect",
         "skills": [
+            "kubernetes",
             "leadership"
         ]
     },
     {
-        "career": "E-commerce Manager",
-        "skills": []
-    },
-    {
-        "career": "E-commerce Specialist",
-        "skills": []
-    },
-    {
-        "career": "Electrical Engineer",
-        "skills": []
-    },
-    {
-        "career": "Engineer",
-        "skills": []
-    },
-    {
-        "career": "Engineering Manager",
-        "skills": []
-    },
-    {
-        "career": "Engineering Supervisor",
+        "career": "Enterprise Network Engineer",
         "skills": [
-            "problem solving"
+            "cisco",
+            "cisco asa",
+            "eigrp",
+            "f5 load balancer",
+            "firewalls",
+            "mpls",
+            "qos"
         ]
     },
     {
-        "career": "Engineering Technician",
-        "skills": []
-    },
-    {
-        "career": "English Teacher",
-        "skills": []
-    },
-    {
-        "career": "Estimator",
-        "skills": []
-    },
-    {
-        "career": "Etl Developer",
+        "career": "Entry",
         "skills": [
-            "sql"
+            "c++",
+            "dns",
+            "git",
+            "github",
+            "java",
+            "kotlin",
+            "malware analysis",
+            "nagios",
+            "python",
+            "pytorch",
+            "rest api",
+            "statistics",
+            "swift",
+            "tcp/ip",
+            "tensorflow"
         ]
     },
     {
-        "career": "Event Executive",
-        "skills": []
-    },
-    {
-        "career": "Executive Chef",
+        "career": "Ethical Hacker",
         "skills": [
-            "collaboration"
+            "c++",
+            "communication",
+            "cryptography",
+            "javascript",
+            "leadership",
+            "linux",
+            "malware analysis",
+            "python",
+            "teamwork"
         ]
     },
     {
-        "career": "Executive Housekeeper",
+        "career": "Fintech Engineer",
         "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Executive Secretary",
-        "skills": [
+            "aws",
+            "azure",
             "collaboration",
-            "communication"
-        ]
-    },
-    {
-        "career": "Executive Sous Chef",
-        "skills": []
-    },
-    {
-        "career": "Fashion Designer",
-        "skills": []
-    },
-    {
-        "career": "Field Collection",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Field Sales",
-        "skills": [
             "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Finance",
-        "skills": [
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Finance & Accounting",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Finance & Accounting Manager",
-        "skills": []
-    },
-    {
-        "career": "Finance & Accounting Staff",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Finance & Accounting Supervisor",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Finance Accounting",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Finance Accounting Manager",
-        "skills": []
-    },
-    {
-        "career": "Finance Accounting Staff",
-        "skills": []
-    },
-    {
-        "career": "Finance Intern",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Finance Manager",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Finance Officer",
-        "skills": [
-            "analytical skills",
-            "communication",
-            "express"
-        ]
-    },
-    {
-        "career": "Finance Staff",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Finance Supervisor",
-        "skills": []
-    },
-    {
-        "career": "Financial Controller",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Fisioterapis",
-        "skills": []
-    },
-    {
-        "career": "Flutter Developer",
-        "skills": [
-            "rest api"
-        ]
-    },
-    {
-        "career": "Food & Beverage Manager",
-        "skills": [
-            "communication",
+            "data analysis",
+            "javascript",
             "leadership",
-            "negotiation"
+            "machine learning",
+            "python",
+            "sql",
+            "teamwork"
         ]
-    },
-    {
-        "career": "Food & Beverage Supervisor",
-        "skills": [
-            "leadership",
-            "problem solving"
-        ]
-    },
-    {
-        "career": "Front Desk Agent",
-        "skills": [
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Front Office",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Front Office Manager",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Front Office Supervisor",
-        "skills": []
     },
     {
         "career": "Frontend Developer",
         "skills": [
             "angular",
+            "bootstrap",
             "css",
+            "git",
             "html",
             "javascript",
-            "react"
+            "react",
+            "tailwind",
+            "vue"
         ]
     },
     {
-        "career": "Fullstack Developer",
+        "career": "Full Stack Developer",
         "skills": [
-            "communication",
-            "java",
+            "angular",
+            "css",
+            "docker",
+            "git",
+            "html",
             "javascript",
-            "php"
+            "kubernetes",
+            "mongodb",
+            "mysql",
+            "node.js",
+            "postgresql",
+            "python",
+            "react",
+            "sql",
+            "typescript",
+            "vue"
         ]
     },
     {
-        "career": "Funding Officer",
+        "career": "Game Developer",
         "skills": [
+            "c#",
+            "c++",
+            "collaboration",
             "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "General Affair",
-        "skills": [
-            "communication",
-            "leadership"
-        ]
-    },
-    {
-        "career": "General Affair Staff",
-        "skills": [
-            "excel",
-            "powerpoint",
-            "word"
-        ]
-    },
-    {
-        "career": "General Manager",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Golang Developer",
-        "skills": [
-            "golang",
+            "git",
+            "java",
+            "leadership",
+            "python",
             "teamwork"
         ]
     },
     {
-        "career": "Graphic Design",
+        "career": "Graduate Ios Developer",
         "skills": [
-            "communication",
-            "photoshop"
+            "git",
+            "swift"
+        ]
+    },
+    {
+        "career": "Graduate Network Engineer",
+        "skills": [
+            "lan/wan",
+            "python"
+        ]
+    },
+    {
+        "career": "Graduate Security Analyst",
+        "skills": [
+            "linux",
+            "malware analysis",
+            "python"
         ]
     },
     {
         "career": "Graphic Designer",
         "skills": [
             "communication",
-            "photoshop"
-        ]
-    },
-    {
-        "career": "Graphic Designer (active Pooling)",
-        "skills": []
-    },
-    {
-        "career": "Graphic Designer Intern",
-        "skills": [
+            "css",
+            "figma",
+            "html",
             "illustrator",
             "photoshop"
         ]
     },
     {
-        "career": "Guest Relation Officer",
+        "career": "Hybrid Cloud Architect",
         "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Guest Service Agent",
-        "skills": []
-    },
-    {
-        "career": "Guest Service Manager",
-        "skills": []
-    },
-    {
-        "career": "Guest Services Agent",
-        "skills": []
-    },
-    {
-        "career": "Guest Services Associate",
-        "skills": []
-    },
-    {
-        "career": "Guru",
-        "skills": []
-    },
-    {
-        "career": "Guru Bahasa Indonesia",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Guru Matematika",
-        "skills": []
-    },
-    {
-        "career": "Head Chef",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Head Of Marketing",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Head Of Sales",
-        "skills": [
-            "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Host",
-        "skills": []
-    },
-    {
-        "career": "Host Live Streaming",
-        "skills": []
-    },
-    {
-        "career": "Hostess",
-        "skills": []
-    },
-    {
-        "career": "Housekeeper",
-        "skills": []
-    },
-    {
-        "career": "Housekeeping Attendant",
-        "skills": []
-    },
-    {
-        "career": "Housekeeping Manager",
-        "skills": []
-    },
-    {
-        "career": "Housekeeping Supervisor",
-        "skills": []
-    },
-    {
-        "career": "Hr Business Partner",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Hr Generalist",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Hr Manager",
-        "skills": []
-    },
-    {
-        "career": "Hr Staff",
-        "skills": []
-    },
-    {
-        "career": "Hr Supervisor",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Hrd",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Hrd Manager",
-        "skills": []
-    },
-    {
-        "career": "Hrd Staff",
-        "skills": [
-            "excel",
-            "powerpoint",
-            "word"
-        ]
-    },
-    {
-        "career": "Hrd Supervisor",
-        "skills": []
-    },
-    {
-        "career": "Hrga Manager",
-        "skills": []
-    },
-    {
-        "career": "Hrga Staff",
-        "skills": [
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Hse Officer",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Human Resources Manager",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Interior Designer",
-        "skills": [
-            "communication",
-            "photoshop"
-        ]
-    },
-    {
-        "career": "Internal Audit",
-        "skills": []
-    },
-    {
-        "career": "Internal Audit Staff",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Internal Auditor",
-        "skills": [
-            "analytical skills"
-        ]
-    },
-    {
-        "career": "It Business Analyst",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "It Developer",
-        "skills": [
-            "communication",
-            "css",
-            "html",
-            "javascript",
-            "mysql",
-            "php",
+            "aws",
+            "azure",
             "python"
         ]
     },
     {
-        "career": "It Manager",
+        "career": "Incident Response Analyst",
         "skills": [
-            "php"
+            "malware analysis",
+            "threat hunting"
         ]
     },
     {
-        "career": "It Programmer",
+        "career": "Information Security Analyst",
         "skills": [
-            "c#",
-            "codeigniter",
-            "css",
-            "html",
+            "firewall basics",
+            "python"
+        ]
+    },
+    {
+        "career": "Information Security Specialist",
+        "skills": [
+            "python"
+        ]
+    },
+    {
+        "career": "Infrastructure Network Engineer",
+        "skills": [
+            "cisco",
+            "lan/wan",
+            "nagios",
+            "network monitoring",
+            "python",
+            "qos"
+        ]
+    },
+    {
+        "career": "Interaction Designer",
+        "skills": [
+            "figma"
+        ]
+    },
+    {
+        "career": "Ios App Developer",
+        "skills": [
+            "git",
+            "swift"
+        ]
+    },
+    {
+        "career": "Ios Application Developer",
+        "skills": [
+            "firebase",
+            "swift"
+        ]
+    },
+    {
+        "career": "Ios Architect",
+        "skills": [
+            "swift"
+        ]
+    },
+    {
+        "career": "Ios Developer",
+        "skills": [
+            "collaboration",
+            "git",
+            "github",
+            "graphql",
+            "swift"
+        ]
+    },
+    {
+        "career": "Ios Engineer",
+        "skills": [
+            "graphql",
+            "swift"
+        ]
+    },
+    {
+        "career": "Ios Mobile App Engineer",
+        "skills": [
+            "firebase",
+            "kotlin",
+            "swift"
+        ]
+    },
+    {
+        "career": "Ios Mobile Developer",
+        "skills": [
+            "git",
+            "swift"
+        ]
+    },
+    {
+        "career": "Ios Solutions Engineer",
+        "skills": [
+            "graphql",
+            "swift"
+        ]
+    },
+    {
+        "career": "Ios Tech Lead",
+        "skills": [
+            "rest api",
+            "swift"
+        ]
+    },
+    {
+        "career": "Iot Engineer",
+        "skills": [
+            "aws",
+            "azure",
+            "c++",
+            "collaboration",
+            "communication",
             "java",
-            "javascript",
-            "laravel",
-            "node.js",
-            "php",
-            "problem solving",
-            "react"
-        ]
-    },
-    {
-        "career": "It Project Manager",
-        "skills": []
-    },
-    {
-        "career": "It Quality Assurance",
-        "skills": []
-    },
-    {
-        "career": "It Staff",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "It Supervisor",
-        "skills": [
-            "php",
-            "sql"
+            "leadership",
+            "machine learning",
+            "power bi",
+            "python",
+            "tableau",
+            "tcp/ip",
+            "teamwork"
         ]
     },
     {
         "career": "It Support",
         "skills": [
-            "linux",
-            "problem solving"
+            "dns",
+            "lan/wan",
+            "network troubleshooting",
+            "tcp/ip"
         ]
     },
     {
         "career": "Java Developer",
         "skills": [
-            "java",
-            "kotlin",
-            "mongodb"
-        ]
-    },
-    {
-        "career": "Java Programmer",
-        "skills": [
+            "angular",
+            "collaboration",
             "css",
+            "docker",
+            "git",
             "html",
             "java",
-            "mysql"
-        ]
-    },
-    {
-        "career": "Junior Account Executive",
-        "skills": []
-    },
-    {
-        "career": "Junior Programmer",
-        "skills": [
-            "java"
-        ]
-    },
-    {
-        "career": "Kasir",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Kepala Bagian Pengembangan Bisnis",
-        "skills": []
-    },
-    {
-        "career": "Kepala Bagian Sdm & Umum",
-        "skills": []
-    },
-    {
-        "career": "Kepala Gudang",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Kepala Instalasi Farmasi",
-        "skills": []
-    },
-    {
-        "career": "Kepala Produksi",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Kepala Unit Rekam Medis",
-        "skills": []
-    },
-    {
-        "career": "Key Account Executive",
-        "skills": []
-    },
-    {
-        "career": "Key Account Manager",
-        "skills": []
-    },
-    {
-        "career": "Kitchen Crew",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Kitchen Staff",
-        "skills": []
-    },
-    {
-        "career": "Kol Specialist",
-        "skills": [
-            "collaboration",
-            "communication",
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Kurir",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Laundry Attendant",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Leader Outlet",
-        "skills": []
-    },
-    {
-        "career": "Legal Counsel",
-        "skills": []
-    },
-    {
-        "career": "Legal Intern",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Legal Manager",
-        "skills": [
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Legal Officer",
-        "skills": [
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Legal Staff",
-        "skills": [
-            "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Legal Supervisor",
-        "skills": [
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Loss Prevention Officer",
-        "skills": []
-    },
-    {
-        "career": "Maintenance",
-        "skills": []
-    },
-    {
-        "career": "Maintenance Manager",
-        "skills": [
-            "communication",
-            "leadership"
-        ]
-    },
-    {
-        "career": "Maintenance Supervisor",
-        "skills": []
-    },
-    {
-        "career": "Management Trainee",
-        "skills": [
-            "communication",
-            "problem solving"
-        ]
-    },
-    {
-        "career": "Manager Marketing",
-        "skills": [
-            "communication",
-            "leadership"
-        ]
-    },
-    {
-        "career": "Manager On Duty",
-        "skills": []
-    },
-    {
-        "career": "Mandarin Teacher",
-        "skills": []
-    },
-    {
-        "career": "Mandarin Translator",
-        "skills": [
-            "communication",
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Marketing",
-        "skills": [
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Marketing Associate",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Marketing Communication",
-        "skills": [
-            "communication",
-            "data analysis"
-        ]
-    },
-    {
-        "career": "Marketing Communication Manager",
-        "skills": [
-            "collaboration",
-            "communication",
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Marketing Communications Manager",
-        "skills": [
-            "analytical skills",
-            "communication",
-            "leadership",
-            "sem",
-            "seo"
-        ]
-    },
-    {
-        "career": "Marketing Executive",
-        "skills": [
-            "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Marketing Manager",
-        "skills": [
-            "communication",
-            "word"
-        ]
-    },
-    {
-        "career": "Marketing Officer",
-        "skills": [
-            "analytical skills",
-            "communication"
-        ]
-    },
-    {
-        "career": "Marketing Property",
-        "skills": []
-    },
-    {
-        "career": "Marketing Specialist",
-        "skills": [
-            "communication",
-            "leadership"
-        ]
-    },
-    {
-        "career": "Marketing Staff",
-        "skills": [
-            "communication",
-            "leadership"
-        ]
-    },
-    {
-        "career": "Marketing Supervisor",
-        "skills": [
-            "statistics",
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Marketing Support",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Mathematics Teacher",
-        "skills": []
-    },
-    {
-        "career": "Medical Representative",
-        "skills": []
-    },
-    {
-        "career": "Mekanik",
-        "skills": []
-    },
-    {
-        "career": "Mekanik Motor",
-        "skills": []
-    },
-    {
-        "career": "Mekanik Sepeda Motor",
-        "skills": []
-    },
-    {
-        "career": "Merchandiser",
-        "skills": [
-            "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Merchant Acquisition",
-        "skills": []
-    },
-    {
-        "career": "Merchant Acquisition Sales",
-        "skills": []
-    },
-    {
-        "career": "Mobile Application Developer",
-        "skills": [
-            "java",
             "javascript",
-            "kotlin",
+            "kubernetes",
+            "leadership",
+            "mongodb",
             "mysql",
-            "react"
+            "postgresql",
+            "problem solving",
+            "react",
+            "rest api",
+            "sql",
+            "teamwork"
         ]
     },
     {
-        "career": "Mobile Developer",
+        "career": "Javascript Developer",
         "skills": [
+            "angular",
+            "collaboration",
+            "communication",
+            "docker",
+            "express",
+            "git",
+            "graphql",
+            "javascript",
+            "leadership",
+            "node.js",
+            "react",
+            "rest api",
+            "teamwork",
+            "typescript",
+            "vue"
+        ]
+    },
+    {
+        "career": "Lead Android Engineer",
+        "skills": [
+            "firebase",
             "java",
+            "kotlin",
+            "rest api"
+        ]
+    },
+    {
+        "career": "Lead Cloud Solutions Architect",
+        "skills": [
+            "aws",
+            "azure",
+            "leadership",
+            "python"
+        ]
+    },
+    {
+        "career": "Lead Cybersecurity Analyst",
+        "skills": [
+            "leadership",
+            "threat hunting"
+        ]
+    },
+    {
+        "career": "Lead Data Scientist",
+        "skills": [
+            "aws",
+            "azure",
+            "git",
+            "java",
+            "leadership",
+            "machine learning",
+            "power bi",
+            "python",
+            "sql",
+            "tableau"
+        ]
+    },
+    {
+        "career": "Lead Ios Engineer",
+        "skills": [
             "swift"
         ]
     },
     {
-        "career": "Motion Graphic Designer",
+        "career": "Lead Machine Learning Engineer",
         "skills": [
-            "communication"
+            "aws",
+            "azure",
+            "java",
+            "leadership",
+            "machine learning",
+            "python",
+            "pytorch",
+            "sql",
+            "tensorflow"
         ]
     },
     {
-        "career": "Motor Bike Mechanic",
+        "career": "Lead Machine Learning Scientist",
         "skills": [
+            "aws",
+            "azure",
+            "java",
+            "leadership",
+            "machine learning",
+            "power bi",
+            "python",
+            "sql",
+            "tableau"
+        ]
+    },
+    {
+        "career": "Lead Ml/ai Engineer",
+        "skills": [
+            "aws",
+            "azure",
+            "java",
+            "leadership",
+            "python",
+            "pytorch",
+            "sql",
+            "tensorflow"
+        ]
+    },
+    {
+        "career": "Lead Network Engineer",
+        "skills": [
+            "cisco",
+            "cisco nexus",
+            "f5 load balancer",
+            "firewalls",
+            "leadership",
+            "mpls"
+        ]
+    },
+    {
+        "career": "Lead System Engineer",
+        "skills": [
+            "leadership",
+            "linux"
+        ]
+    },
+    {
+        "career": "Lead Ux Designer",
+        "skills": [
+            "collaboration",
+            "figma"
+        ]
+    },
+    {
+        "career": "Machine Learning Engineer",
+        "skills": [
+            "aws",
+            "azure",
+            "git",
+            "github",
+            "java",
+            "leadership",
+            "machine learning",
+            "mongodb",
+            "mysql",
+            "power bi",
+            "python",
+            "pytorch",
+            "sql",
+            "statistics",
+            "tableau",
+            "tensorflow"
+        ]
+    },
+    {
+        "career": "Machine Learning Scientist",
+        "skills": [
+            "aws",
+            "azure",
+            "java",
+            "leadership",
+            "machine learning",
+            "power bi",
+            "python",
+            "sql",
+            "tableau"
+        ]
+    },
+    {
+        "career": "Market Research Analyst",
+        "skills": [
+            "communication",
+            "data analysis",
+            "excel",
+            "leadership",
+            "power bi",
+            "python",
+            "sql",
+            "tableau"
+        ]
+    },
+    {
+        "career": "Marketing Specialist",
+        "skills": [
+            "collaboration",
+            "communication",
+            "data analysis",
+            "leadership",
+            "sem",
+            "seo",
+            "tableau"
+        ]
+    },
+    {
+        "career": "Ml Engineer",
+        "skills": [
+            "git",
+            "github",
+            "java",
+            "python",
+            "pytorch",
+            "statistics",
+            "tensorflow"
+        ]
+    },
+    {
+        "career": "Ml Infrastructure Engineer",
+        "skills": [
+            "aws",
+            "azure",
+            "java",
+            "python",
+            "pytorch",
+            "sql",
+            "tensorflow"
+        ]
+    },
+    {
+        "career": "Multi",
+        "skills": [
+            "aws",
+            "azure",
+            "kubernetes",
             "leadership"
         ]
     },
     {
-        "career": "Motor Mechanic",
+        "career": "Network",
         "skills": [
-            "leadership"
+            "cisco",
+            "dhcp",
+            "vpn"
         ]
     },
     {
-        "career": "Motorcycle Mechanic",
-        "skills": []
+        "career": "Network Automation Engineer",
+        "skills": [
+            "cisco",
+            "python"
+        ]
     },
     {
         "career": "Network Engineer",
         "skills": [
+            "bgp",
+            "cisco",
+            "cisco asa",
+            "cisco nexus",
+            "cisco routers",
+            "dhcp",
+            "dns",
+            "firewalls",
+            "ids/ips",
+            "lan/wan",
+            "mpls",
+            "nagios",
+            "ospf",
+            "qos",
+            "solarwinds",
+            "tcp/ip"
+        ]
+    },
+    {
+        "career": "Network Operations Center (noc) Engineer",
+        "skills": [
+            "incident management",
+            "nagios",
+            "network monitoring",
+            "solarwinds",
+            "tcp/ip"
+        ]
+    },
+    {
+        "career": "Network Security Engineer",
+        "skills": [
+            "cisco",
+            "cisco asa",
+            "cryptography",
+            "firewalls",
+            "ids/ips",
+            "vpn"
+        ]
+    },
+    {
+        "career": "Network Support Engineer",
+        "skills": [
+            "bgp",
+            "firewall basics",
+            "ospf",
+            "routing basics",
+            "solarwinds",
+            "vpn",
+            "vpn setup"
+        ]
+    },
+    {
+        "career": "Operations Manager",
+        "skills": [
+            "collaboration",
             "communication",
+            "data analysis",
+            "leadership",
             "problem solving"
         ]
     },
     {
-        "career": "Odoo Developer",
+        "career": "Principal Android Developer",
         "skills": [
-            "python"
-        ]
-    },
-    {
-        "career": "Officer-loss Prevention",
-        "skills": []
-    },
-    {
-        "career": "Operational Manager",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Operator Produksi",
-        "skills": []
-    },
-    {
-        "career": "Outlet Manager",
-        "skills": []
-    },
-    {
-        "career": "Pastry Chef",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Penjaga Stand",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Penjahit",
-        "skills": []
-    },
-    {
-        "career": "Perawat",
-        "skills": []
-    },
-    {
-        "career": "Perawat Gigi",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Perawat Kamar Bedah",
-        "skills": []
-    },
-    {
-        "career": "Personal Assistant",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Php Developer",
-        "skills": [
-            "mysql",
-            "php",
-            "postgresql"
-        ]
-    },
-    {
-        "career": "Php Programmer",
-        "skills": [
-            "codeigniter",
-            "css",
-            "express",
-            "html",
+            "firebase",
             "java",
-            "javascript",
             "kotlin",
-            "laravel",
-            "mysql",
-            "php",
-            "python"
+            "rest api"
         ]
     },
     {
-        "career": "Plant Manager",
+        "career": "Principal Android Engineer",
         "skills": [
+            "firebase",
+            "java",
+            "kotlin",
+            "rest api"
+        ]
+    },
+    {
+        "career": "Principal Data Scientist",
+        "skills": [
+            "aws",
+            "java",
+            "leadership",
+            "machine learning",
+            "power bi",
+            "python",
+            "sql",
+            "tableau"
+        ]
+    },
+    {
+        "career": "Principal Ios Developer",
+        "skills": [
+            "swift"
+        ]
+    },
+    {
+        "career": "Principal Machine Learning Engineer",
+        "skills": [
+            "aws",
+            "azure",
+            "java",
+            "leadership",
+            "machine learning",
+            "python",
+            "pytorch",
+            "sql",
+            "tensorflow"
+        ]
+    },
+    {
+        "career": "Principal Network Engineer",
+        "skills": [
+            "cisco",
+            "cisco nexus",
             "leadership"
         ]
     },
     {
-        "career": "Pos Assurance Consultant (pac)",
-        "skills": []
-    },
-    {
-        "career": "Ppic",
+        "career": "Principal Security Analyst",
         "skills": [
-            "analytical skills",
-            "excel",
-            "powerpoint",
-            "word"
+            "leadership",
+            "siem tools",
+            "threat hunting"
         ]
     },
     {
-        "career": "Ppic Staff",
+        "career": "Principal Ux Designer",
         "skills": [
-            "analytical skills"
-        ]
-    },
-    {
-        "career": "Pramuniaga",
-        "skills": []
-    },
-    {
-        "career": "Preschool Teacher",
-        "skills": []
-    },
-    {
-        "career": "Process Engineer",
-        "skills": []
-    },
-    {
-        "career": "Procurement Manager",
-        "skills": []
-    },
-    {
-        "career": "Procurement Specialist",
-        "skills": [
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Procurement Staff",
-        "skills": [
-            "communication",
-            "excel",
-            "negotiation",
-            "word"
-        ]
-    },
-    {
-        "career": "Procurement Supervisor",
-        "skills": [
-            "negotiation",
-            "problem solving"
+            "figma",
+            "leadership"
         ]
     },
     {
         "career": "Product Designer",
-        "skills": []
-    },
-    {
-        "career": "Product Manager",
         "skills": [
-            "data analysis",
-            "leadership"
-        ]
-    },
-    {
-        "career": "Product Owner",
-        "skills": []
-    },
-    {
-        "career": "Product Specialist",
-        "skills": []
-    },
-    {
-        "career": "Production Engineer",
-        "skills": []
-    },
-    {
-        "career": "Production Manager",
-        "skills": [
-            "excel",
-            "leadership",
-            "teamwork",
-            "word"
-        ]
-    },
-    {
-        "career": "Production Supervisor",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Programmer",
-        "skills": [
-            "bootstrap",
-            "codeigniter",
-            "java",
+            "collaboration",
+            "css",
+            "figma",
+            "html",
+            "illustrator",
             "javascript",
-            "laravel",
-            "mysql",
-            "php",
-            "react",
-            "sql"
-        ]
-    },
-    {
-        "career": "Project Coordinator",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Project Engineer",
-        "skills": [
-            "analytical skills"
-        ]
-    },
-    {
-        "career": "Project Manager",
-        "skills": []
-    },
-    {
-        "career": "Project Manager - Energy Efficiency Company",
-        "skills": []
-    },
-    {
-        "career": "Public Area Attendant",
-        "skills": []
-    },
-    {
-        "career": "Public Relation",
-        "skills": [
-            "communication",
-            "google ads",
+            "leadership",
+            "photoshop",
             "teamwork"
         ]
     },
     {
-        "career": "Purchasing",
+        "career": "Product Manager",
         "skills": [
+            "collaboration",
             "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Purchasing Manager",
-        "skills": [
-            "analytical skills",
-            "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Purchasing Officer",
-        "skills": [
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Purchasing Staff",
-        "skills": [
+            "data analysis",
             "excel",
-            "negotiation"
+            "figma",
+            "leadership",
+            "sql",
+            "tableau",
+            "teamwork"
         ]
     },
     {
-        "career": "Purchasing Supervisor",
+        "career": "Project Manager",
         "skills": [
-            "communication"
+            "collaboration",
+            "communication",
+            "leadership",
+            "negotiation",
+            "teamwork"
+        ]
+    },
+    {
+        "career": "Python Developer",
+        "skills": [
+            "aws",
+            "collaboration",
+            "communication",
+            "css",
+            "data analysis",
+            "docker",
+            "git",
+            "graphql",
+            "html",
+            "javascript",
+            "kubernetes",
+            "leadership",
+            "mongodb",
+            "mysql",
+            "postgresql",
+            "python",
+            "pytorch",
+            "sql",
+            "teamwork",
+            "tensorflow"
         ]
     },
     {
         "career": "Qa Engineer",
         "skills": [
-            "communication"
+            "c#",
+            "java",
+            "javascript",
+            "leadership",
+            "python"
         ]
     },
     {
-        "career": "Quality Assurance",
-        "skills": []
-    },
-    {
-        "career": "Quality Control",
-        "skills": []
-    },
-    {
-        "career": "Quality Control Staff",
+        "career": "Robotics Engineer",
         "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Quantity Surveyor",
-        "skills": []
-    },
-    {
-        "career": "Radiografer",
-        "skills": [
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Receptionist",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Recruiter",
-        "skills": []
-    },
-    {
-        "career": "Recruitment Officer",
-        "skills": []
-    },
-    {
-        "career": "Recruitment Specialist",
-        "skills": [
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Recruitment Staff",
-        "skills": []
-    },
-    {
-        "career": "Regional Sales Manager",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Relationship Manager",
-        "skills": [
+            "c++",
+            "collaboration",
             "communication",
             "leadership",
-            "negotiation"
+            "machine learning",
+            "problem solving",
+            "python",
+            "teamwork"
         ]
-    },
-    {
-        "career": "Relationship Officer",
-        "skills": []
-    },
-    {
-        "career": "Remedial Officer All",
-        "skills": []
-    },
-    {
-        "career": "Reservation Agent",
-        "skills": []
-    },
-    {
-        "career": "Restaurant Manager",
-        "skills": []
-    },
-    {
-        "career": "Revenue Manager",
-        "skills": []
-    },
-    {
-        "career": "Room Attendant",
-        "skills": []
-    },
-    {
-        "career": "Sales",
-        "skills": []
-    },
-    {
-        "career": "Sales & Marketing",
-        "skills": [
-            "communication",
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Sales & Marketing Manager",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Sales & Service Officer",
-        "skills": []
-    },
-    {
-        "career": "Sales / Marketing",
-        "skills": [
-            "excel",
-            "teamwork",
-            "word"
-        ]
-    },
-    {
-        "career": "Sales Admin",
-        "skills": [
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Sales Area",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Sales Associate",
-        "skills": []
-    },
-    {
-        "career": "Sales Canvasser",
-        "skills": []
-    },
-    {
-        "career": "Sales Consultant",
-        "skills": [
-            "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Sales Coordinator",
-        "skills": []
-    },
-    {
-        "career": "Sales Counter",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Sales Development Representative",
-        "skills": []
-    },
-    {
-        "career": "Sales Engineer",
-        "skills": [
-            "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Sales Engineering",
-        "skills": []
     },
     {
         "career": "Sales Executive",
         "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Sales Force",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Sales Manager",
-        "skills": [
-            "communication",
-            "excel",
-            "negotiation",
-            "problem solving"
-        ]
-    },
-    {
-        "career": "Sales Manager - Jakarta Sales Office",
-        "skills": []
-    },
-    {
-        "career": "Sales Marketing",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Sales Marketing Executive",
-        "skills": [
-            "analytical skills"
-        ]
-    },
-    {
-        "career": "Sales Motoris",
-        "skills": []
-    },
-    {
-        "career": "Sales Officer",
-        "skills": [
-            "communication",
-            "excel",
-            "negotiation",
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Sales Officer Channeling",
-        "skills": []
-    },
-    {
-        "career": "Sales Officer Mcy All",
-        "skills": []
-    },
-    {
-        "career": "Sales Officer Mobile",
-        "skills": []
-    },
-    {
-        "career": "Sales Officer Pool",
-        "skills": []
-    },
-    {
-        "career": "Sales Project",
-        "skills": [
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Sales Promotion",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Sales Property",
-        "skills": []
-    },
-    {
-        "career": "Sales Representative",
-        "skills": []
-    },
-    {
-        "career": "Sales Specialist",
-        "skills": []
-    },
-    {
-        "career": "Sales Staff",
-        "skills": [
             "communication",
             "negotiation"
         ]
     },
     {
-        "career": "Sales Supervisor",
+        "career": "Security & Network Engineer",
         "skills": [
-            "negotiation"
+            "cisco",
+            "cisco routers",
+            "firewall basics",
+            "ids/ips",
+            "vpn"
         ]
     },
     {
-        "career": "Sales Support",
+        "career": "Security Analyst",
         "skills": [
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Salesman",
-        "skills": [
-            "communication",
-            "excel",
-            "negotiation",
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Scrum Master",
-        "skills": [
-            "collaboration"
-        ]
-    },
-    {
-        "career": "Secretary",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Security",
-        "skills": []
-    },
-    {
-        "career": "Security Engineer",
-        "skills": [
-            "problem solving"
-        ]
-    },
-    {
-        "career": "Sekretaris",
-        "skills": [
-            "communication",
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Senior Account Executive",
-        "skills": [
-            "word"
-        ]
-    },
-    {
-        "career": "Senior Accounting",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Senior Programmer",
-        "skills": [
-            "analytical skills",
-            "c#",
-            "golang",
-            "php",
-            "python",
-            "rest api"
-        ]
-    },
-    {
-        "career": "Senior Sales Manager",
-        "skills": [
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Senior Software Engineer",
-        "skills": [
-            "communication",
-            "leadership",
-            "node.js"
+            "collaboration",
+            "cryptography",
+            "javascript",
+            "linux",
+            "malware analysis",
+            "python"
         ]
     },
     {
         "career": "Seo Specialist",
         "skills": [
             "communication",
-            "sem",
+            "css",
+            "html",
+            "javascript",
+            "machine learning",
             "seo"
         ]
     },
     {
-        "career": "Server",
+        "career": "Site Reliability Engineer",
         "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Site Engineer",
-        "skills": []
-    },
-    {
-        "career": "Site Manager",
-        "skills": []
-    },
-    {
-        "career": "Social Media Manager",
-        "skills": [
-            "photoshop",
-            "sem",
-            "seo"
-        ]
-    },
-    {
-        "career": "Social Media Officer",
-        "skills": [
+            "aws",
+            "azure",
+            "collaboration",
             "communication",
-            "photoshop"
+            "dns",
+            "docker",
+            "github",
+            "java",
+            "kubernetes",
+            "leadership",
+            "linux",
+            "nagios",
+            "python",
+            "tcp/ip"
         ]
     },
     {
-        "career": "Social Media Specialist",
+        "career": "Soc Analyst",
         "skills": [
-            "communication"
+            "malware analysis",
+            "python",
+            "siem tools",
+            "threat hunting"
         ]
     },
     {
         "career": "Software Developer",
         "skills": [
+            "angular",
+            "aws",
+            "azure",
+            "c#",
+            "c++",
+            "collaboration",
+            "communication",
+            "css",
+            "docker",
+            "git",
+            "html",
             "java",
             "javascript",
-            "node.js"
+            "kotlin",
+            "kubernetes",
+            "leadership",
+            "machine learning",
+            "node.js",
+            "python",
+            "react",
+            "sql",
+            "swift",
+            "teamwork",
+            "typescript",
+            "vue"
         ]
     },
     {
         "career": "Software Engineer",
         "skills": [
-            "aws"
-        ]
-    },
-    {
-        "career": "Software Engineering Manager",
-        "skills": []
-    },
-    {
-        "career": "Software Quality Assurance",
-        "skills": [
+            "angular",
+            "aws",
+            "azure",
+            "c++",
+            "css",
+            "docker",
+            "express",
+            "figma",
+            "git",
+            "github",
+            "html",
+            "java",
+            "javascript",
+            "kubernetes",
+            "leadership",
+            "machine learning",
+            "mongodb",
             "mysql",
-            "sql"
+            "node.js",
+            "postgresql",
+            "python",
+            "react",
+            "rest api",
+            "sql",
+            "typescript",
+            "vue"
         ]
     },
     {
-        "career": "Solution Architect",
+        "career": "Software Tester (sdet)",
         "skills": [
+            "azure",
+            "c#",
             "collaboration",
-            "leadership"
-        ]
-    },
-    {
-        "career": "Sous Chef",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Spa Therapist",
-        "skills": [
-            "java"
-        ]
-    },
-    {
-        "career": "Spg/spb",
-        "skills": [
             "communication",
+            "java",
+            "leadership",
+            "python",
             "teamwork"
         ]
     },
     {
-        "career": "Staff Accounting",
+        "career": "Solutions Architect",
         "skills": [
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Staff Admin",
-        "skills": []
-    },
-    {
-        "career": "Staff Administrasi",
-        "skills": [
+            "aws",
+            "azure",
+            "collaboration",
             "communication",
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Staff Export Import",
-        "skills": [
-            "communication",
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Staff Finance",
-        "skills": [
-            "communication",
-            "excel",
-            "word"
-        ]
-    },
-    {
-        "career": "Staff Gudang",
-        "skills": [
-            "communication",
-            "excel",
-            "powerpoint",
-            "word"
-        ]
-    },
-    {
-        "career": "Staff Hrd",
-        "skills": [
-            "communication",
-            "excel",
-            "leadership",
-            "word"
-        ]
-    },
-    {
-        "career": "Staff It",
-        "skills": [
-            "javascript",
-            "laravel",
-            "leadership",
-            "mysql",
-            "php",
-            "sql"
-        ]
-    },
-    {
-        "career": "Staff Laundry",
-        "skills": []
-    },
-    {
-        "career": "Staff Marketing",
-        "skills": [
-            "communication",
-            "excel",
-            "illustrator",
-            "photoshop",
-            "word"
-        ]
-    },
-    {
-        "career": "Staff Outlet",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Staff Pajak",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Staff Purchasing",
-        "skills": [
-            "communication",
-            "excel",
-            "negotiation",
-            "word"
-        ]
-    },
-    {
-        "career": "Steward",
-        "skills": []
-    },
-    {
-        "career": "Store Manager",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Supervisor",
-        "skills": [
-            "leadership"
-        ]
-    },
-    {
-        "career": "Supervisor Accounting",
-        "skills": [
-            "problem solving"
-        ]
-    },
-    {
-        "career": "Supervisor Marketing",
-        "skills": [
-            "communication",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Supervisor Outlet",
-        "skills": []
-    },
-    {
-        "career": "Supervisor Produksi",
-        "skills": [
-            "communication",
+            "docker",
             "java",
+            "javascript",
+            "kubernetes",
+            "leadership",
+            "node.js",
+            "python",
+            "teamwork"
+        ]
+    },
+    {
+        "career": "Staff Ux Designer",
+        "skills": [
+            "figma",
             "leadership"
         ]
     },
     {
-        "career": "Supervisor-housekeeping",
-        "skills": []
-    },
-    {
-        "career": "Supervisor-loss Prevention",
-        "skills": []
-    },
-    {
-        "career": "Supply Chain Manager",
+        "career": "Swift Developer",
         "skills": [
-            "leadership",
-            "negotiation"
-        ]
-    },
-    {
-        "career": "Surveyor",
-        "skills": []
-    },
-    {
-        "career": "System Administrator",
-        "skills": [
-            "linux",
-            "mysql"
-        ]
-    },
-    {
-        "career": "System Analyst",
-        "skills": [
-            "analytical skills"
+            "git",
+            "swift"
         ]
     },
     {
         "career": "System Engineer",
         "skills": [
-            "linux"
-        ]
-    },
-    {
-        "career": "Talent Acquisition",
-        "skills": []
-    },
-    {
-        "career": "Talent Acquisition Manager",
-        "skills": []
-    },
-    {
-        "career": "Tax Assistant Manager",
-        "skills": []
-    },
-    {
-        "career": "Tax Manager",
-        "skills": []
-    },
-    {
-        "career": "Tax Officer",
-        "skills": []
-    },
-    {
-        "career": "Tax Specialist",
-        "skills": []
-    },
-    {
-        "career": "Tax Staff",
-        "skills": [
-            "excel"
-        ]
-    },
-    {
-        "career": "Tax Supervisor",
-        "skills": []
-    },
-    {
-        "career": "Team Leader",
-        "skills": []
-    },
-    {
-        "career": "Technical Consultant",
-        "skills": [
-            "collaboration",
-            "teamwork"
-        ]
-    },
-    {
-        "career": "Technical Lead",
-        "skills": [
-            "java",
-            "sql"
-        ]
-    },
-    {
-        "career": "Technical Project Manager",
-        "skills": []
-    },
-    {
-        "career": "Technical Support",
-        "skills": [
-            "communication"
+            "aws",
+            "azure",
+            "docker",
+            "firewalls",
+            "kubernetes",
+            "linux",
+            "nagios",
+            "python",
+            "tcp/ip"
         ]
     },
     {
         "career": "Technical Writer",
         "skills": [
-            "communication"
+            "collaboration",
+            "css",
+            "html"
         ]
     },
     {
-        "career": "Technician",
+        "career": "Telecom & Network Engineer",
         "skills": [
-            "communication"
+            "bgp",
+            "cisco",
+            "cisco routers",
+            "lan/wan",
+            "qos",
+            "sip",
+            "voip"
         ]
     },
     {
-        "career": "Teknisi",
-        "skills": []
-    },
-    {
-        "career": "Telemarketing",
-        "skills": []
-    },
-    {
-        "career": "Telephone Operator",
-        "skills": []
-    },
-    {
-        "career": "Telesales",
-        "skills": []
-    },
-    {
-        "career": "Teller",
-        "skills": []
-    },
-    {
-        "career": "Tenaga Pendidik (guru)",
+        "career": "Test Automation Engineer",
         "skills": [
-            "analytical skills"
-        ]
-    },
-    {
-        "career": "Therapist",
-        "skills": []
-    },
-    {
-        "career": "Training Manager",
-        "skills": [
-            "analytical skills"
-        ]
-    },
-    {
-        "career": "Translator Mandarin",
-        "skills": [
-            "communication",
-            "data analysis",
-            "express"
-        ]
-    },
-    {
-        "career": "UI/UX Designer",
-        "skills": [
-            "communication"
-        ]
-    },
-    {
-        "career": "Universal Banker",
-        "skills": []
-    },
-    {
-        "career": "Universal Banker - Surabaya",
-        "skills": []
-    },
-    {
-        "career": "Ux Researcher",
-        "skills": []
-    },
-    {
-        "career": "Ux Writer",
-        "skills": [
-            "express",
+            "c#",
+            "docker",
+            "java",
+            "javascript",
             "leadership",
-            "seo"
+            "python"
         ]
     },
     {
-        "career": "Video Editor",
-        "skills": []
-    },
-    {
-        "career": "Videographer",
+        "career": "Ui Designer",
         "skills": [
-            "communication"
+            "collaboration",
+            "css",
+            "figma",
+            "html",
+            "illustrator",
+            "leadership",
+            "photoshop"
         ]
     },
     {
-        "career": "Waiter",
-        "skills": []
-    },
-    {
-        "career": "Waiters",
+        "career": "Ux",
         "skills": [
-            "excel"
+            "figma"
         ]
     },
     {
-        "career": "Waitress",
-        "skills": []
+        "career": "Ux Analyst",
+        "skills": [
+            "figma"
+        ]
     },
     {
-        "career": "Warehouse Manager",
+        "career": "Ux Apprentice",
         "skills": [
+            "figma"
+        ]
+    },
+    {
+        "career": "Ux Architect",
+        "skills": [
+            "figma"
+        ]
+    },
+    {
+        "career": "Ux Consultant",
+        "skills": [
+            "figma"
+        ]
+    },
+    {
+        "career": "Ux Design",
+        "skills": [
+            "figma"
+        ]
+    },
+    {
+        "career": "Ux Design Lead",
+        "skills": [
+            "figma",
             "leadership"
         ]
     },
     {
-        "career": "Warehouse Staff",
+        "career": "Ux Designer",
         "skills": [
-            "communication"
+            "collaboration",
+            "css",
+            "figma",
+            "html"
         ]
     },
     {
-        "career": "Warehouse Supervisor",
-        "skills": []
+        "career": "Ux Manager",
+        "skills": [
+            "figma",
+            "leadership"
+        ]
     },
     {
-        "career": "Web Designer",
+        "career": "Ux Strategist",
+        "skills": [
+            "figma"
+        ]
+    },
+    {
+        "career": "Vibe Coder",
         "skills": [
             "collaboration",
-            "illustrator",
-            "photoshop"
+            "communication",
+            "css",
+            "html",
+            "javascript",
+            "leadership",
+            "problem solving",
+            "python",
+            "react",
+            "teamwork",
+            "vue"
         ]
     },
     {
         "career": "Web Developer",
         "skills": [
-            "bootstrap",
-            "collaboration",
-            "communication",
+            "angular",
+            "aws",
             "css",
+            "docker",
+            "express",
+            "git",
+            "github",
+            "graphql",
             "html",
-            "java",
             "javascript",
-            "laravel",
-            "php",
-            "rest api",
-            "sql",
-            "vue"
-        ]
-    },
-    {
-        "career": "Web Programmer",
-        "skills": [
-            "codeigniter",
-            "css",
-            "html",
-            "java",
-            "javascript",
-            "laravel",
+            "kubernetes",
+            "mongodb",
             "mysql",
+            "node.js",
             "php",
-            "problem solving",
+            "python",
             "react",
-            "sql"
-        ]
-    },
-    {
-        "career": "iOS Developer",
-        "skills": [
-            "swift"
+            "redis",
+            "sql",
+            "typescript",
+            "vue"
         ]
     }
 ]

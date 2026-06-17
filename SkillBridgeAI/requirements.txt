@@ -1,6 +1,10 @@
-sentence-transformers
-pandas
-numpy
-scikit-learn
-google-generativeai
+fastapi
+uvicorn
+pydantic
 streamlit
+requests
+sentence-transformers
+scikit-learn
+numpy
+pandas
+google-generativeai
