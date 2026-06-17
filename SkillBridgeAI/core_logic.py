@@ -146,7 +146,9 @@ def get_skill_gap(
 def get_roadmap(
     user_skill_text: str,
     target_career: str,
-    missing_skills: list
+    missing_skills: list,
+    gap_percentage: str,    
+    readiness_score: str
 ):
 
     try:
@@ -154,7 +156,10 @@ def get_roadmap(
         roadmap_raw = generate_roadmap_json(
             user_skills=user_skill_text,
             job_title=target_career,
-            job_requirements=", ".join(missing_skills)
+            job_requirements=", ".join(missing_skills),
+            missing_skills=", ".join(missing_skills),
+            gap_percentage=gap_percentage, # Kirim ke AI
+            readiness_score=readiness_score
         )
 
         try:
@@ -223,11 +228,8 @@ def analyze_user(
 
         selected_career = recommendations[0]["career"]
 
-    score_result = get_match_score(
-        user_skill_text=user_skill_text,
-        target_career=selected_career
-    )
-
+    score_result = get_match_score(user_skill_text, selected_career)
+    
     skill_gap_result = get_skill_gap(
         user_skill_text=user_skill_text,
         target_career=selected_career
@@ -244,15 +246,20 @@ def analyze_user(
             "missing_skills",
             []
         )
+    
+    # 2. Ambil data untuk dikirim ke Gemini
+    # Kita ambil langsung dari key yang disediakan scoring.py
+    gap_pct = score_result.get("gap_percentage", "100.00%")
+    readiness_scr = score_result.get("readiness_score", "0.00%")
 
     roadmap_result = None
-
     if missing_skills:
-
         roadmap_result = get_roadmap(
             user_skill_text=user_skill_text,
             target_career=selected_career,
-            missing_skills=missing_skills
+            missing_skills=missing_skills,
+            gap_percentage=gap_pct, 
+            readiness_score=readiness_scr
         )
 
     return {
