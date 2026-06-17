@@ -147,8 +147,8 @@ def get_roadmap(
     user_skill_text: str,
     target_career: str,
     missing_skills: list,
-    gap_percentage: str,    
-    readiness_score: str
+    gap_percentage: str = "100.00%",    
+    readiness_score: str = "0.00%"
 ):
 
     try:

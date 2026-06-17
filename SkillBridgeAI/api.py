@@ -8,7 +8,8 @@ from core_logic import (
     analyze_user,
     get_recommendations,
     get_skill_gap,
-    get_roadmap
+    get_roadmap,
+    get_match_score
 )
 
 app = FastAPI(
@@ -42,10 +43,17 @@ class SkillGapRequest(BaseModel):
     target_career: str
 
 
+class MatchScoreRequest(BaseModel):
+    skills: str
+    target_career: str
+
+
 class RoadmapRequest(BaseModel):
     skills: str
     target_career: str
     missing_skills: List[str]
+    gap_percentage: Optional[str] = "100.00%"
+    readiness_score: Optional[str] = "0.00%"
 
 
 @app.get("/")
@@ -93,11 +101,20 @@ def skill_gap(req: SkillGapRequest):
     )
 
 
+@app.post("/match-score")
+def match_score(req: MatchScoreRequest):
+    return get_match_score(
+        user_skill_text=req.skills,
+        target_career=req.target_career
+    )
+
+
 @app.post("/roadmap")
 def roadmap(req: RoadmapRequest):
-
     return get_roadmap(
         user_skill_text=req.skills,
         target_career=req.target_career,
-        missing_skills=req.missing_skills
+        missing_skills=req.missing_skills,
+        gap_percentage=req.gap_percentage,
+        readiness_score=req.readiness_score
     )

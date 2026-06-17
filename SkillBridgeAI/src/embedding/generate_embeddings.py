@@ -51,9 +51,10 @@ for i, career in enumerate(unique_careers):
 
 embeddings_array = np.array(unique_embeddings)
 
-np.save(
-    "data/embeddings/career_embeddings.npy",
-    embeddings_array
+np.savetxt(
+    "data/embeddings/career_embeddings.csv",
+    embeddings_array,
+    delimiter=","
 )
 
 # Group by career and aggregate columns to preserve them in career_profiles.csv

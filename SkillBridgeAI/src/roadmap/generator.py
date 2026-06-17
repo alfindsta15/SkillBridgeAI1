@@ -8,12 +8,44 @@ def generate_roadmap_json(user_skills, job_title, job_requirements, missing_skil
     dalam format JSON terstruktur menggunakan Gemini API.
     """
     # Koneksi API
+    import os
+    GOOGLE_API_KEY = os.getenv("PROJECT_CELERATES") or os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+    
+    if not GOOGLE_API_KEY:
+        # Fallback 1: Streamlit secrets
+        try:
+            GOOGLE_API_KEY = st.secrets["PROJECT_CELERATES"]
+        except Exception:
+            pass
+            
+    if not GOOGLE_API_KEY:
+        # Fallback 2: Manual secrets.toml parsing
+        try:
+            secrets_path = os.path.join(
+                os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 
+                ".streamlit", 
+                "secrets.toml"
+            )
+            if os.path.exists(secrets_path):
+                with open(secrets_path, "r", encoding="utf-8") as f:
+                    for line in f:
+                        if "PROJECT_CELERATES" in line:
+                            # Extract value between quotes
+                            parts = line.split("=")
+                            if len(parts) > 1:
+                                GOOGLE_API_KEY = parts[1].replace('"', '').replace("'", "").strip()
+                                break
+        except Exception:
+            pass
+
+    if not GOOGLE_API_KEY:
+        print("Gagal mengambil API Key. Periksa .env, Environment Variables, atau .streamlit/secrets.toml.")
+        return json.dumps({"error": "API Key tidak terkonfigurasi dengan benar."})
+
     try:
-        GOOGLE_API_KEY = st.secrets["PROJECT_CELERATES"]
         genai.configure(api_key=GOOGLE_API_KEY)
     except Exception as e:
-        print(f"Gagal mengambil API Key. Periksa .streamlit/secrets.toml: {e}")
-        return json.dumps({"error": "API Key tidak terkonfigurasi dengan benar."})
+        return json.dumps({"error": f"Gagal mengonfigurasi Gemini API: {str(e)}"})
     
     # Menggunakan model Gemini terbaru untuk pemrosesan logika backend
     model = genai.GenerativeModel('gemini-2.5-flash')

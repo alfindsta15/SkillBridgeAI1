@@ -26,7 +26,7 @@ from src.skill_extraction.skill_gap import normalize_skill_name
 
 # Load career profiles and precomputed embeddings
 _raw_careers = pd.read_csv("data/processed/career_profiles.csv")
-_raw_embeddings = np.load("data/embeddings/career_embeddings.npy")
+_raw_embeddings = np.loadtxt("data/embeddings/career_embeddings.csv", delimiter=",")
 
 # Filter out careers with 0 skills in career_skills.json and populate career_to_skills mapping
 career_to_skills = {}
