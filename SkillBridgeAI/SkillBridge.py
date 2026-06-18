@@ -209,9 +209,11 @@ with col_right:
     if st.session_state.show_evaluation and st.session_state.analysis:
         analysis = st.session_state.analysis
         roadmap  = st.session_state.roadmap
-        score    = analysis["readiness_score"]
         target   = st.session_state.selected_career
-
+        score    = 0
+        for rec in st.session.state.recommendations
+            if rec["title"] == target:
+                score = rec["match_score"] * 100 if rec["match_scoore] <= 1 else rec["macth_score"]
         if score >= 66:
             ring_color = "#16a34a"; kategori = "Siap Kerja (Butuh Poles Sedikit)"
             badge_bg = "#f0fdf4"; badge_color = "#15803d"; badge_border = "#bbf7d0"
@@ -263,20 +265,6 @@ with col_right:
             unsafe_allow_html=True
         )
         
-        # Roadmap
-        if roadmap:
-            st.markdown("""
-            <div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:12px; padding:20px 20px 8px 20px; margin-bottom:4px;">
-                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
-                    <div style="display:flex; align-items:center; gap:8px;">
-                        <span style="font-size:16px;">◫</span>
-                        <span style="font-size:15px; font-weight:700; color:#111827;">Roadmap Belajar Terpersonalisasi (4 Minggu)</span>
-                    </div>
-                </div>
-                <p style="color:#6b7280; font-size:12px; margin:0 0 14px 0;">Dihasilkan oleh AI berbasis deteksi gap secara zero-shot</p>
-            </div>
-            """, unsafe_allow_html=True)
-
         # =========================
         # ROADMAP
         # =========================
