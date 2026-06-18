@@ -154,29 +154,20 @@ def get_analysis(user_text: str, target_title: str):
 # ==========================================================
 # ROADMAP GENERATOR
 # ==========================================================
-def get_roadmap(target_title: str, missing_skills: list):
+def get_roadmap(
+        target_title: str,
+        missing_skills: list,
+        gap_percentage="100%",
+        readiness_score="0%"
+):
 
     try:
+        import json
+        import requests
+        import streamlit as st
 
-        user_text = st.session_state.get(
-            "user_skills_text",
-            ""
-        )
-
-        analysis = st.session_state.get(
-            "analysis",
-            {}
-        )
-
-        gap_pct = analysis.get(
-            "_gap_percentage",
-            "100.00%"
-        )
-
-        ready_str = analysis.get(
-            "_readiness_str",
-            "0.00%"
-        )
+        user_text = st.session_state.get("user_skills_text", "")
+        analysis = st.session_state.get("analysis", {}) or {}
 
         response = requests.post(
             f"{API_URL}/roadmap",
@@ -184,115 +175,93 @@ def get_roadmap(target_title: str, missing_skills: list):
                 "skills": user_text,
                 "target_career": target_title,
                 "missing_skills": missing_skills,
-                "gap_percentage": gap_pct,
-                "readiness_score": ready_str
+                "gap_percentage": analysis.get("_gap_percentage", "100%"),
+                "readiness_score": analysis.get("_readiness_str", "0%")
             },
             timeout=120
         )
 
         response.raise_for_status()
-
         raw = response.json()
 
-        if not raw.get("success", False):
+        print("ROADMAP RAW:", raw)
 
-            return {
-                "weeks": []
-            }
+        # =========================
+        # VALIDASI RAW
+        # =========================
+        if not isinstance(raw, dict):
+            return {"weeks": []}
 
-        data = raw.get(
-            "data",
-            {}
+        # =========================
+        # AMBIL DATA DENGAN AMAN
+        # =========================
+        data = raw.get("data")
+
+        if not isinstance(data, dict):
+            data = {}
+
+        roadmap_data = (
+            data.get("roadmap")
+            or raw.get("roadmap")
+            or {}
         )
 
-        if isinstance(data, str):
-
+        # kalau string JSON
+        if isinstance(roadmap_data, str):
             try:
-                data = json.loads(data)
-
+                roadmap_data = json.loads(roadmap_data)
             except:
-                return {
-                    "weeks": []
-                }
+                return {"weeks": []}
 
-        roadmap_data = data.get(
-            "roadmap",
-            data
-        )
+        if not isinstance(roadmap_data, dict):
+            return {"weeks": []}
 
+        # =========================
+        # PARSING ROADMAP
+        # =========================
         weeks = []
 
-        for w_num in range(1, 5):
+        for w_key, w_data in roadmap_data.items():
 
-            week_key = f"W{w_num}"
-
-            if week_key not in roadmap_data:
+            if not isinstance(w_data, dict):
                 continue
-
-            w_data = roadmap_data[week_key]
 
             days = []
 
-            for d_num in range(1, 7):
+            for d_key, d_data in w_data.items():
 
-                day_key = f"d{d_num}"
-
-                if day_key not in w_data:
+                if not isinstance(d_data, dict):
                     continue
 
-                d_data = w_data[day_key]
-
-                resources = d_data.get(
-                    "resources",
-                    []
-                )
-
+                resources = d_data.get("resources", [])
                 resource_link = "-"
 
-                if (
-                    resources
-                    and isinstance(resources, list)
-                ):
-
-                    first_resource = resources[0]
-
-                    if isinstance(first_resource, dict):
-
-                        resource_link = first_resource.get(
-                            "link",
-                            "-"
-                        )
+                if isinstance(resources, list) and len(resources) > 0:
+                    first = resources[0]
+                    if isinstance(first, dict):
+                        resource_link = first.get("link", "-")
 
                 days.append({
-                    "day": d_num,
-                    "topic": d_data.get(
-                        "title",
-                        ""
-                    ),
-                    "detail": d_data.get(
-                        "desc",
-                        ""
-                    ),
+                    "day": d_key,
+                    "topic": d_data.get("title", ""),
+                    "detail": d_data.get("desc", ""),
                     "resource": resource_link
                 })
 
             weeks.append({
-                "week": w_num,
-                "focus": w_data.get(
-                    "tag",
-                    f"Minggu {w_num}"
-                ),
+                "week": w_key,
+                "focus": w_data.get("tag", f"Minggu {w_key}"),
                 "days": days
             })
 
         return {
-            "weeks": weeks
-        }
+    "success": True,
+    "weeks": weeks
+}
 
     except Exception as e:
-
         print("ROADMAP ERROR:", str(e))
-
         return {
-            "weeks": []
-        }
+    "success": False,
+    "weeks": []
+}
