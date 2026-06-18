@@ -22,8 +22,7 @@ with st.container(border=True):
     col_logo, col_title = st.columns([1, 11])
 
     with col_logo:
-        st.image("SkillBridgeAI.png", width=75)
-
+        st.image("SkillBridgeAI/SkillBridgeAI.png", width=75)
     with col_title:
         st.markdown("""
         <h1 style="
