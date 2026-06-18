@@ -229,30 +229,30 @@ def get_roadmap(
             days = []
 
             for d_key, d_data in w_data.items():
-
+                if not str(d_key).lower().startswith("d"):
+                    continue
                 if not isinstance(d_data, dict):
                     continue
-
                 resources = d_data.get("resources", [])
-                resource_link = "-"
-
+                resource_link = "#"
+                
                 if isinstance(resources, list) and len(resources) > 0:
                     first = resources[0]
                     if isinstance(first, dict):
-                        resource_link = first.get("link", "-")
-
+                        resource_link = first.get("link", "#")
+                
                 days.append({
-                    "day": d_key,
-                    "topic": d_data.get("title", ""),
-                    "detail": d_data.get("desc", ""),
-                    "resource": resource_link
-                })
+                    "day": d_key.upper(),
+                    "topic": str(d_data.get("title", "")),
+                    "detail": str(d_data.get("desc", "")),
+                    "resource": resource_link})
 
             weeks.append({
-                "week": w_key,
-                "focus": w_data.get("tag", f"Minggu {w_key}"),
+                "week": w_key.replace("W", ""),
+                "focus": w_data.get("tag", ""),
+                "title": w_data.get("title", ""),
                 "days": days
-            })
+                })
 
         return {
     "success": True,
