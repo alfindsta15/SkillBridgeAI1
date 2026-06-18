@@ -22,7 +22,8 @@ with st.container(border=True):
     col_logo, col_title = st.columns([1, 11])
 
     with col_logo:
-        st.image("SkillBridgeAI/SkillBridgeAI.png", width=75)
+        st.image("SkillBridgeAI.png", width=75)
+
     with col_title:
         st.markdown("""
         <h1 style="
@@ -300,77 +301,87 @@ with col_right:
                 tab_labels = [f"Minggu {w['week']}" for w in weeks]
                 tabs = st.tabs(tab_labels)
 
-                for idx, tab in enumerate(tabs):
+for idx, tab in enumerate(tabs):
 
-                    with tab:
+    with tab:
 
-                        week = weeks[idx]
+        week = weeks[idx]
 
-                        st.markdown(
-                            f"""
-                            <p style="
-                            font-size:12px;
-                            font-weight:700;
-                            color:#6b7280;
-                            text-transform:uppercase;
-                            margin-bottom:12px;">
-                            {week.get("focus","")}
-                            </p>
-                            """,
-                            unsafe_allow_html=True
+        st.markdown(
+            '<p style="font-size:12px; font-weight:700; color:#6b7280; '
+            'text-transform:uppercase; letter-spacing:0.05em; '
+            'margin-bottom:12px;">'
+            + week.get("focus", "") +
+            '</p>',
+            unsafe_allow_html=True
+        )
+
+        days = week.get("days", [])
+
+        for d in range(0, len(days), 2):
+
+            cols = st.columns(2)
+
+            for j, col in enumerate(cols):
+
+                if d + j < len(days):
+
+                    day = days[d + j]
+
+                    resource_html = ""
+
+                    resource = day.get("resource", "-")
+
+                    if resource not in ["-", "#", "", None]:
+
+                        resource_html = (
+                            '<a href="' + resource + '" '
+                            'target="_blank" '
+                            'style="font-size:11px; '
+                            'color:#60a5fa; '
+                            'font-weight:600; '
+                            'text-decoration:none;">'
+                            '📚 Buka Sumber Belajar'
+                            '</a>'
                         )
 
-                        days = week.get("days", [])
+                    with col:
 
-                        for d in range(0, len(days), 2):
+                        st.markdown(
+                            '<div style="'
+                            'background:#1e3a5f; '
+                            'border-radius:10px; '
+                            'padding:14px 16px; '
+                            'margin-bottom:10px; '
+                            'min-height:140px;">'
 
-                            cols = st.columns(2)
+                            '<p style="'
+                            'font-size:14px; '
+                            'font-weight:600; '
+                            'color:#ffffff; '
+                            'margin:0 0 6px 0;">'
 
-                            for j, col in enumerate(cols):
+                            'Hari ' + str(day.get("day", "")) +
+                            ' — ' +
+                            day.get("topic", "") +
 
-                                if d + j < len(days):
+                            '</p>'
 
-                                    day = days[d + j]
+                            '<p style="'
+                            'font-size:13px; '
+                            'color:#cbd5e1; '
+                            'margin:0 0 8px 0;">'
 
-                                    with col:
+                            + day.get("detail", "") +
 
-                                        st.markdown(
-                                            f"""
-                                            <div style="
-                                            background:#1e3a5f;
-                                            border-radius:10px;
-                                            padding:14px 16px;
-                                            margin-bottom:10px;
-                                            min-height:120px;">
+                            '</p>'
 
-                                            <p style="
-                                            color:white;
-                                            font-weight:600;">
-                                            Hari {day.get('day')} — {day.get('topic')}
-                                            </p>
+                            + resource_html +
 
-                                            <p style="color:#cbd5e1;">
-{day.get('detail')}
-</p>
-
-<a href="{day.get('resource', '#')}"
-   target="_blank"
-   style="
-   color:white;
-   font-size:12px;
-   text-decoration:none;
-   font-weight:600;">
-   📚 Buka Sumber Belajar
-</a>
-
-                                            </div>
-                                            """,
-                                            unsafe_allow_html=True
-                                        )
-
-        elif st.session_state.show_evaluation:
-
-            st.warning(
-                "⏳ Roadmap sedang diproses oleh AI atau belum tersedia. "
-                "Coba klik Evaluasi Kesiapan kembali."
-            )
+                            '</div>',
+                            unsafe_allow_html=True
+                        )
+                else:
+                        st.info(
+                            "⏳ Roadmap sedang diproses oleh AI atau belum tersedia. "
+                            "Coba klik Evaluasi Kesiapan kembali.")
