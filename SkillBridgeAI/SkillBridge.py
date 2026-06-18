@@ -1,18 +1,18 @@
+import os
 import streamlit as st
 from dotenv import load_dotenv
 from utils.state import init_session_state
 from utils.styles import inject_styles
 from utils.api import get_recommendations, get_analysis, get_roadmap
 
-load_dotenv()
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOGO_PATH = os.path.join(BASE_DIR, "SkillBridgeAI.png")
 # ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="SkillBridge AI",
-    page_icon="SkillBridgeAI.png",
+    page_icon=LOGO_PATH,
     layout="wide"
 )
-
 inject_styles()
 init_session_state()
 
@@ -21,13 +21,13 @@ with st.container(border=True):
 
     col_logo, col_title = st.columns([1, 11])
 
-    with col_logo:import os
+with col_logo:
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-logo_path = os.path.join(BASE_DIR, "SkillBridgeAI.png")
-
-st.image(logo_path, width=75)
-
+    if os.path.exists(LOGO_PATH):
+        st.image(LOGO_PATH, width=75)
+    else:
+        st.warning("Logo tidak ditemukan")
+        
     with col_title:
         st.markdown("""
         <h1 style="
