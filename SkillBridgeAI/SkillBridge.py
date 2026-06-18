@@ -210,10 +210,13 @@ with col_right:
         analysis = st.session_state.analysis
         roadmap  = st.session_state.roadmap
         target   = st.session_state.selected_career
+        
         score    = 0
         for rec in st.session.state.recommendations
             if rec["title"] == target:
                 score = rec["match_score"] * 100 if rec["match_scoore] <= 1 else rec["macth_score"]
+                break
+                
         if score >= 66:
             ring_color = "#16a34a"; kategori = "Siap Kerja (Butuh Poles Sedikit)"
             badge_bg = "#f0fdf4"; badge_color = "#15803d"; badge_border = "#bbf7d0"
