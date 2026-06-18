@@ -21,8 +21,12 @@ with st.container(border=True):
 
     col_logo, col_title = st.columns([1, 11])
 
-    with col_logo:
-        st.image("SkillBridgeAI.png", width=75)
+    with col_logo:import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+logo_path = os.path.join(BASE_DIR, "SkillBridgeAI.png")
+
+st.image(logo_path, width=75)
 
     with col_title:
         st.markdown("""
