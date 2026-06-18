@@ -153,9 +153,9 @@ with col_left:
                 st.session_state.selected_career = title
                 with st.spinner("Mengevaluasi kesiapan..."):
                     analysis = get_analysis(st.session_state.user_skills_text, title)
+                    st.session_state.analysis = analysis
                     missing_list = [m["skill"] for m in analysis.get("missing_skills_priority", [])]
                     roadmap = get_roadmap(title, missing_list)
-                    st.session_state.analysis = analysis
                     st.session_state.roadmap = roadmap
                     st.session_state.show_evaluation = True
                 st.rerun()
@@ -197,10 +197,10 @@ with col_right:
         else:
             with st.spinner("Mengevaluasi..."):
                 analysis = get_analysis(st.session_state.user_skills_text, selected)
+                st.session_state.analysis = analysis
                 missing_list = [m["skill"] for m in analysis.get("missing_skills_priority", [])]
                 roadmap = get_roadmap(selected, missing_list)
                 st.session_state.selected_career = selected
-                st.session_state.analysis = analysis
                 st.session_state.roadmap = roadmap
                 st.session_state.show_evaluation = True
             st.rerun()
