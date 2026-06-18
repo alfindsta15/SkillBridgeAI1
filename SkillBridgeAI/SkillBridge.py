@@ -211,7 +211,7 @@ with col_right:
         roadmap  = st.session_state.roadmap
         target   = st.session_state.selected_career
         
-        score    = 0
+        score = analysis.get("readiness_score", 0)
         for rec in st.session.state.recommendations:
             if rec["title"] == target:
                 score = rec["match_score"] * 100 if rec["match_score"] <= 1 else rec["macth_score"]
