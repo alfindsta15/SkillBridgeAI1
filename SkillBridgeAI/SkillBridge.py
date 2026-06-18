@@ -1,4 +1,4 @@
-﻿import streamlit as st
+import streamlit as st
 from dotenv import load_dotenv
 from utils.state import init_session_state
 from utils.styles import inject_styles
@@ -7,23 +7,57 @@ from utils.api import get_recommendations, get_analysis, get_roadmap
 load_dotenv()
 
 # ─────────────────────────────────────────────────────────────────────────────
-st.set_page_config(page_title="SkillBridge AI", page_icon="🎓", layout="wide")
+st.set_page_config(
+    page_title="SkillBridge AI",
+    page_icon="SkillBridgeAI.png",
+    layout="wide"
+)
+
 inject_styles()
 init_session_state()
 
-# ── Header ───────────────────────────────────────────────────────────────────
-st.markdown("""
-<div style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:16px 28px; margin-bottom:16px; display:flex; align-items:center; gap:14px;">
-    <div style="font-size:32px;">🎓</div>
-    <div style="display:flex; align-items:center; gap:8px;">
-        <span style="font-size:36px; font-weight:800; color:#111827;">SkillBridge</span>
-        <span style="font-size:13px; background:#ede9fe; color:#7c3aed; padding:2px 8px; border-radius:99px; font-weight:600;">AI</span>
-    </div>
-</div>
-""", unsafe_allow_html=True)
+# ── Header ───────────────────────────────────────────────────────
+with st.container(border=True):
 
-st.markdown("<h2 style='margin:0 0 4px 0; color:#111827;'>Halo, Talenta Masa Depan! 👋</h2>", unsafe_allow_html=True)
-st.markdown("<p style='color:#6b7280; margin-bottom:24px;'>Petakan keahlianmu, dapatkan rekomendasi karir, dan modul belajar yang dipersonalisasi.</p>", unsafe_allow_html=True)
+    col_logo, col_title = st.columns([1, 11])
+
+    with col_logo:
+        st.image("SkillBridgeAI.png", width=75)
+
+    with col_title:
+        st.markdown("""
+        <h1 style="
+            margin-top:0px;
+            margin-bottom:0;
+            font-size:42px;
+            font-weight:900;
+            color:#111827;
+            letter-spacing:-1px;
+        ">
+           | SkillBridge
+            <span style="
+                background:#7c3aed;
+                color:white;
+                padding:2px 12px;
+                border-radius:999px;
+                font-size:16px;
+                font-weight:700;
+                vertical-align:middle;
+            ">
+                AI
+            </span>
+        </h1>
+        """, unsafe_allow_html=True)
+
+st.markdown(
+    "<h2 style='margin:0 0 4px 0; color:#111827;'>Halo, Talenta Masa Depan! 👋</h2>",
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    "<p style='color:#6b7280; margin-bottom:24px;'>Petakan keahlianmu, dapatkan rekomendasi karir, dan modul belajar yang dipersonalisasi.</p>",
+    unsafe_allow_html=True
+)
 
 # ── Layout ───────────────────────────────────────────────────────────────────
 col_left, col_right = st.columns([5, 7], gap="large")
@@ -224,7 +258,7 @@ with col_right:
             + miss_label + '<div>' + badges + '</div></div>',
             unsafe_allow_html=True
         )
-
+        
         # Roadmap
         if roadmap:
             st.markdown("""
@@ -239,44 +273,105 @@ with col_right:
             </div>
             """, unsafe_allow_html=True)
 
-            weeks      = roadmap.get("weeks", [])
-            tab_labels = [f"Minggu {w['week']}" for w in weeks]
-            tabs       = st.tabs(tab_labels)
+        # =========================
+        # ROADMAP
+        # =========================
 
-            for idx, tab in enumerate(tabs):
-                with tab:
-                    week = weeks[idx]
-                    st.markdown(
-                        '<p style="font-size:12px; font-weight:700; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px;">'
-                        + week.get("focus", "") + '</p>',
-                        unsafe_allow_html=True
-                    )
-                    days = week.get("days", [])
-                    for d in range(0, len(days), 2):
-                        cols = st.columns(2)
-                        for j, col in enumerate(cols):
-                            if d + j < len(days):
-                                day = days[d + j]
-                                resource_html = ""
-                                if day.get("resource", "-") != "-":
-                                    resource_html = '<p style="font-size:11px; color:#16a34a; font-weight:500; margin:4px 0 0 0;">&#128218; Resource: ' + day["resource"] + '</p>'
-                                with col:
-                                    st.markdown(
-                                        '<div style="background:#1e3a5f; border-radius:10px; padding:14px 16px; margin-bottom:10px; min-height:120px;">'
-                                        '<p style="font-size:14px; font-weight:600; color:#ffffff; margin:0 0 4px 0;">Hari ' + str(day.get("day", "")) + ' — ' + day.get("topic", "") + '</p>'
-                                        '<p style="font-size:13px; color:#cbd5e1; margin:0;">' + day.get("detail", "") + '</p>'
-                                        + resource_html +
-                                        '</div>',
-                                        unsafe_allow_html=True
-                                    )
-        else:
-            st.info("⏳ Roadmap sedang diproses oleh AI atau belum tersedia. Coba klik Evaluasi Kesiapan kembali.")
+        if roadmap and roadmap.get("success", False):
 
-    else:
-        st.markdown("""
-        <div style="background:#ffffff; border:2px dashed #e5e7eb; border-radius:12px; text-align:center; padding:56px 24px; margin-top:8px;">
-            <div style="font-size:40px; margin-bottom:14px; color:#1e3a5f;">✦</div>
-            <h3 style="color:#111827; margin:0 0 8px 0; font-size:18px;">Mulai Perjalanan Upskilling Anda</h3>
-            <p style="color:#9ca3af; font-size:13px; margin:0;">Gunakan kolom input sebelah kiri untuk memproses skill Anda saat ini, kemudian saksikan analisis cerdas dan modul buatan AI di sini.</p>
-        </div>
-        """, unsafe_allow_html=True)
+            weeks = roadmap.get("weeks", [])
+
+            if weeks:
+
+                st.markdown("""
+                <div style="background:#ffffff; border:1px solid #e5e7eb;
+                border-radius:12px; padding:20px 20px 8px 20px; margin-bottom:4px;">
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <span style="font-size:16px;">◫</span>
+                        <span style="font-size:15px; font-weight:700; color:#111827;">
+                            Roadmap Belajar Terpersonalisasi (4 Minggu)
+                        </span>
+                    </div>
+                    <p style="color:#6b7280; font-size:12px; margin-top:6px;">
+                        Dihasilkan oleh AI berbasis deteksi gap secara zero-shot
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+
+                tab_labels = [f"Minggu {w['week']}" for w in weeks]
+                tabs = st.tabs(tab_labels)
+
+                for idx, tab in enumerate(tabs):
+
+                    with tab:
+
+                        week = weeks[idx]
+
+                        st.markdown(
+                            f"""
+                            <p style="
+                            font-size:12px;
+                            font-weight:700;
+                            color:#6b7280;
+                            text-transform:uppercase;
+                            margin-bottom:12px;">
+                            {week.get("focus","")}
+                            </p>
+                            """,
+                            unsafe_allow_html=True
+                        )
+
+                        days = week.get("days", [])
+
+                        for d in range(0, len(days), 2):
+
+                            cols = st.columns(2)
+
+                            for j, col in enumerate(cols):
+
+                                if d + j < len(days):
+
+                                    day = days[d + j]
+
+                                    with col:
+
+                                        st.markdown(
+                                            f"""
+                                            <div style="
+                                            background:#1e3a5f;
+                                            border-radius:10px;
+                                            padding:14px 16px;
+                                            margin-bottom:10px;
+                                            min-height:120px;">
+
+                                            <p style="
+                                            color:white;
+                                            font-weight:600;">
+                                            Hari {day.get('day')} — {day.get('topic')}
+                                            </p>
+
+                                            <p style="color:#cbd5e1;">
+{day.get('detail')}
+</p>
+
+<a href="{day.get('resource', '#')}"
+   target="_blank"
+   style="
+   color:white;
+   font-size:12px;
+   text-decoration:none;
+   font-weight:600;">
+   📚 Buka Sumber Belajar
+</a>
+
+                                            </div>
+                                            """,
+                                            unsafe_allow_html=True
+                                        )
+
+        elif st.session_state.show_evaluation:
+
+            st.warning(
+                "⏳ Roadmap sedang diproses oleh AI atau belum tersedia. "
+                "Coba klik Evaluasi Kesiapan kembali."
+            )
