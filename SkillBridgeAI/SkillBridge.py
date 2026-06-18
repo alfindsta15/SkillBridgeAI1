@@ -281,111 +281,121 @@ with col_right:
         # ROADMAP
         # =========================
 
-        if roadmap and roadmap.get("success", False):
+if roadmap and roadmap.get("success", False):
 
-            weeks = roadmap.get("weeks", [])
+    weeks = roadmap.get("weeks", [])
 
-            if weeks:
+    if weeks:
 
-                st.markdown("""
-                <div style="background:#ffffff; border:1px solid #e5e7eb;
-                border-radius:12px; padding:20px 20px 8px 20px; margin-bottom:4px;">
-                    <div style="display:flex; align-items:center; gap:8px;">
-                        <span style="font-size:16px;">◫</span>
-                        <span style="font-size:15px; font-weight:700; color:#111827;">
-                            Roadmap Belajar Terpersonalisasi (4 Minggu)
-                        </span>
-                    </div>
-                    <p style="color:#6b7280; font-size:12px; margin-top:6px;">
-                        Dihasilkan oleh AI berbasis deteksi gap secara zero-shot
-                    </p>
-                </div>
-                """, unsafe_allow_html=True)
+        st.markdown("""
+        <div style="background:#ffffff; border:1px solid #e5e7eb;
+        border-radius:12px; padding:20px 20px 8px 20px; margin-bottom:4px;">
+            <div style="display:flex; align-items:center; gap:8px;">
+                <span style="font-size:16px;">◫</span>
+                <span style="font-size:15px; font-weight:700; color:#111827;">
+                    Roadmap Belajar Terpersonalisasi (4 Minggu)
+                </span>
+            </div>
+            <p style="color:#6b7280; font-size:12px; margin-top:6px;">
+                Dihasilkan oleh AI berbasis deteksi gap secara zero-shot
+            </p>
+        </div>
+        """, unsafe_allow_html=True)
 
-                tab_labels = [f"Minggu {w['week']}" for w in weeks]
-                tabs = st.tabs(tab_labels)
+        tab_labels = [f"Minggu {w['week']}" for w in weeks]
+        tabs = st.tabs(tab_labels)
 
-for idx, tab in enumerate(tabs):
+        # ==================================
+        # HARUS MASUK KE DALAM if weeks
+        # ==================================
+        for idx, tab in enumerate(tabs):
 
-    with tab:
+            with tab:
 
-        week = weeks[idx]
+                week = weeks[idx]
 
-        st.markdown(
-            '<p style="font-size:12px; font-weight:700; color:#6b7280; '
-            'text-transform:uppercase; letter-spacing:0.05em; '
-            'margin-bottom:12px;">'
-            + week.get("focus", "") +
-            '</p>',
-            unsafe_allow_html=True
+                st.markdown(
+                    '<p style="font-size:12px; font-weight:700; color:#6b7280; '
+                    'text-transform:uppercase; letter-spacing:0.05em; '
+                    'margin-bottom:12px;">'
+                    + week.get("focus", "") +
+                    '</p>',
+                    unsafe_allow_html=True
+                )
+
+                days = week.get("days", [])
+
+                for d in range(0, len(days), 2):
+
+                    cols = st.columns(2)
+
+                    for j, col in enumerate(cols):
+
+                        if d + j < len(days):
+
+                            day = days[d + j]
+
+                            resource_html = ""
+
+                            resource = day.get("resource", "-")
+
+                            if resource not in ["-", "#", "", None]:
+
+                                resource_html = (
+                                    f'<a href="{resource}" '
+                                    'target="_blank" '
+                                    'style="font-size:11px;'
+                                    'color:#60a5fa;'
+                                    'font-weight:600;'
+                                    'text-decoration:none;">'
+                                    '📚 Buka Sumber Belajar'
+                                    '</a>'
+                                )
+
+                            with col:
+
+                                st.markdown(
+                                    '<div style="'
+                                    'background:#1e3a5f;'
+                                    'border-radius:10px;'
+                                    'padding:14px 16px;'
+                                    'margin-bottom:10px;'
+                                    'min-height:140px;">'
+
+                                    '<p style="'
+                                    'font-size:14px;'
+                                    'font-weight:600;'
+                                    'color:#ffffff;'
+                                    'margin:0 0 6px 0;">'
+
+                                    'Hari '
+                                    + str(day.get("day", ""))
+                                    + ' — '
+                                    + day.get("topic", "")
+                                    + '</p>'
+
+                                    '<p style="'
+                                    'font-size:13px;'
+                                    'color:#cbd5e1;'
+                                    'margin:0 0 8px 0;">'
+
+                                    + day.get("detail", "")
+                                    + '</p>'
+
+                                    + resource_html +
+
+                                    '</div>',
+                                    unsafe_allow_html=True
+                                )
+
+    else:
+        st.info(
+            "⏳ Roadmap sedang diproses oleh AI atau belum tersedia. "
+            "Coba klik Evaluasi Kesiapan kembali."
         )
 
-        days = week.get("days", [])
-
-        for d in range(0, len(days), 2):
-
-            cols = st.columns(2)
-
-            for j, col in enumerate(cols):
-
-                if d + j < len(days):
-
-                    day = days[d + j]
-
-                    resource_html = ""
-
-                    resource = day.get("resource", "-")
-
-                    if resource not in ["-", "#", "", None]:
-
-                        resource_html = (
-                            '<a href="' + resource + '" '
-                            'target="_blank" '
-                            'style="font-size:11px; '
-                            'color:#60a5fa; '
-                            'font-weight:600; '
-                            'text-decoration:none;">'
-                            '📚 Buka Sumber Belajar'
-                            '</a>'
-                        )
-
-                    with col:
-
-                        st.markdown(
-                            '<div style="'
-                            'background:#1e3a5f; '
-                            'border-radius:10px; '
-                            'padding:14px 16px; '
-                            'margin-bottom:10px; '
-                            'min-height:140px;">'
-
-                            '<p style="'
-                            'font-size:14px; '
-                            'font-weight:600; '
-                            'color:#ffffff; '
-                            'margin:0 0 6px 0;">'
-
-                            'Hari ' + str(day.get("day", "")) +
-                            ' — ' +
-                            day.get("topic", "") +
-
-                            '</p>'
-
-                            '<p style="'
-                            'font-size:13px; '
-                            'color:#cbd5e1; '
-                            'margin:0 0 8px 0;">'
-
-                            + day.get("detail", "") +
-
-                            '</p>'
-
-                            + resource_html +
-
-                            '</div>',
-                            unsafe_allow_html=True
-                        )
-                else:
-                        st.info(
-                            "⏳ Roadmap sedang diproses oleh AI atau belum tersedia. "
-                            "Coba klik Evaluasi Kesiapan kembali.")
+else:
+    st.info(
+        "⏳ Roadmap sedang diproses oleh AI atau belum tersedia. "
+        "Coba klik Evaluasi Kesiapan kembali."
+    )
