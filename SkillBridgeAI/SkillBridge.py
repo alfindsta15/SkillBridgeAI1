@@ -214,7 +214,7 @@ with col_right:
         score = analysis.get("readiness_score", 0)
         for rec in st.session_state.recommendations:
             if rec["title"] == target:
-                score = rec["match_score"] * 100 if rec["match_score"] <= 1 else rec["match_score"]
+                raw_score = rec["match_score"] * 100 if rec["match_score"] <= 1 else rec["match_score"]
                 score = round(raw_score, 1)
                 break
                 
