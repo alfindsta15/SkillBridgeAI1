@@ -242,7 +242,7 @@ def get_roadmap(
                         resource_link = first.get("link", "#")
                 
                 days.append({
-                    "day": d_key.upper(),
+                    "day": d_key.upper().replace("D", ""),
                     "topic": str(d_data.get("title", "")),
                     "detail": str(d_data.get("desc", "")),
                     "resource": resource_link})
