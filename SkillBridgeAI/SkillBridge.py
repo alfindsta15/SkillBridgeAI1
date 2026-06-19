@@ -215,6 +215,7 @@ with col_right:
         for rec in st.session_state.recommendations:
             if rec["title"] == target:
                 score = rec["match_score"] * 100 if rec["match_score"] <= 1 else rec["match_score"]
+                score = round(raw_score, 1)
                 break
                 
         if score >= 66:
@@ -239,7 +240,7 @@ with col_right:
             '<p style="font-size:17px; font-weight:800; color:#111827; margin:0 0 16px 0;">Target: <span style="color:#1e3a5f;">' + target + '</span></p>'
             '<div style="display:flex; align-items:center; gap:20px; margin-bottom:16px;">'
             '<div style="width:90px; height:90px; border-radius:50%; border:5px solid ' + ring_color + '; display:flex; align-items:center; justify-content:center; flex-direction:column; flex-shrink:0; background:#f8fafc;">'
-            '<span style="font-size:22px; font-weight:800; color:' + ring_color + '; line-height:1;">' + str(score) + '%</span>'
+            '<span style="font-size:22px; font-weight:800; color:' + ring_color + '; line-height:1;">' + f"{score:.1f}" + '%</span>'
             '<span style="font-size:9px; text-transform:uppercase; letter-spacing:0.05em; color:#9ca3af;">SKOR KERJA</span>'
             '</div>'
             '<div style="flex:1;">'
