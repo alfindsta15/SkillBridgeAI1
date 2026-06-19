@@ -314,6 +314,11 @@ with col_right:
                             for j, col in enumerate(cols):
                                 if d + j < len(days):
                                     day = days[d + j]
+                                    day_number = (
+                                        str(day.get("day", ""))
+                                        .replace("D", "")
+                                        .replace("d", "")
+                                    )
                                     resource_html = ""
                                     resource = day.get("resource", "-")
                                     if resource not in ["-", "#", "", None]:
@@ -342,7 +347,7 @@ with col_right:
                                             'color:#ffffff;'
                                             'margin:0 0 6px 0;">'
                                             'Hari '
-                                            + str(day.get("day", ""))
+                                            + day_number
                                             + ' — '
                                             + day.get("topic", "")
                                             + '</p>'
